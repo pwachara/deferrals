@@ -1622,7 +1622,7 @@
 		},
 		{
 			"path": "client/views/covidlofs/insert/insert.html",
-			"checksum": "51162fe79c50fa6163f6f7ad423068390dcf0db1"
+			"checksum": "416db55e4275dc2d74e03ca64c3730c08c66020a"
 		},
 		{
 			"path": "client/views/covidlofs/insert/insert.js",
@@ -1634,7 +1634,7 @@
 		},
 		{
 			"path": "client/views/covidlofs/update/update.html",
-			"checksum": "82a736ed2d6ff91a5242a92004a8dd07f10f4ab7"
+			"checksum": "0178d0c9da045b96f16122e99ff97a08cd71f61e"
 		},
 		{
 			"path": "client/views/covidlofs/update/update.js",
