@@ -1,0 +1,227 @@
+<template name="SowSowClosedUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> SowSowClosedUpdateForm}}
+	</div>
+</template>
+
+<template name="SowSowClosedUpdateForm">
+	<div id="sow-sow-closed-update-form" class="">
+		<h2 id="component-title">
+			Edit Sow Closed
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-loo_date">
+				<label for="loo_date">
+					LOO Date
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="loo_date" value="{{formatDate sow_closed.loo_date 'DD/MM/YYYY'}}" class="form-control " autofocus="autofocus" required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<input type="text" name="borrower" value="{{sow_closed.borrower}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount">
+				<label for="amount">
+					Amount
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount" value="{{sow_closed.amount}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-sow_deadline">
+				<label for="sow_deadline">
+					SOW Deadline
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="sow_deadline" value="{{formatDate sow_closed.sow_deadline 'DD/MM/YYYY'}}" class="form-control " required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="status" data-type="string">
+						<option value="Pending" {{optionIsSelected sow_closed.status "Pending"}}>							Pending</option>
+						<option value="Closed" {{optionIsSelected sow_closed.status "Closed"}}>							Closed</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_closed" value="{{formatDate sow_closed.date_closed 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-penalty_af_collected">
+				<label for="penalty_af_collected">
+					Penalty AF Collected?
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="penalty_af_collected" data-type="string">
+						<option value="No" {{optionIsSelected sow_closed.penalty_af_collected "No"}}>							No</option>
+						<option value="Yes" {{optionIsSelected sow_closed.penalty_af_collected "Yes"}}>							Yes</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-af_collected">
+				<label for="af_collected">
+					AF Collected
+				</label>
+				<div class="input-div">
+					<input type="text" name="af_collected" value="{{sow_closed.af_collected}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_af_collected">
+				<label for="date_af_collected">
+					Date AF Collected
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_af_collected" value="{{formatDate sow_closed.date_af_collected 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					RM
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm" value="{{sow_closed.rm}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm_email">
+				<label for="rm_email">
+					RM Email
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm_email" value="{{sow_closed.rm_email}}" class="form-control " required="required" data-type="email">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm_assistant_email">
+				<label for="rm_assistant_email">
+					RM Assistant Email
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm_assistant_email" value="{{sow_closed.rm_assistant_email}}" class="form-control " data-type="email">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-credit_risk_email">
+				<label for="credit_risk_email">
+					Credit Risk Email
+				</label>
+				<div class="input-div">
+					<input type="text" name="credit_risk_email" value="{{sow_closed.credit_risk_email}}" class="form-control " required="required" data-type="email">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

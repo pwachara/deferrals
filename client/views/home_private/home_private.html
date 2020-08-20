@@ -1,0 +1,63 @@
+<template name="HomePrivate">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="menu" class="col-sm-3 col-md-2">
+				<h2>
+				</h2>
+				{{> HomePrivateSideMenu}}
+			</div>
+			<div id="subcontent" class="col-sm-9 col-md-10">
+				{{> yield region='HomePrivateSubcontent'}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="HomePrivateSideMenu">
+	<ul id="menu-items" class="nav nav-stacked nav-pills">
+		<li id="menu-item-simple" class="{{menuItemClass 'home_private.instructions_incomplete'}}">
+			<a href="{{pathFor 'home_private.instructions_incomplete'}}">
+				<span class="item-title">
+					Incomplete Instructions
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'home_private.instructions_complete'}}">
+			<a href="{{pathFor 'home_private.instructions_complete'}}">
+				<span class="item-title">
+					Complete Instructions
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'home_private.instructions_all'}}">
+			<a href="{{pathFor 'home_private.instructions_all'}}">
+				<span class="item-title">
+					All Instructions
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'home_private.lawyers_in_panel'}}">
+			<a href="{{pathFor 'home_private.lawyers_in_panel'}}">
+				<span class="item-title">
+					Lawyers in Panel
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'home_private.pending_instructions_with_undertakings'}}">
+			<a href="{{pathFor 'home_private.pending_instructions_with_undertakings'}}">
+				<span class="item-title">
+					Pending Instructions With Undertakings
+				</span>
+			</a>
+		</li>
+	</ul>
+</template>
+

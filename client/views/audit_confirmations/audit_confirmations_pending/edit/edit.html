@@ -1,0 +1,191 @@
+<template name="AuditConfirmationsAuditConfirmationsPendingEdit">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<h2 id="page_title" class="pull-left">
+					Edit Audit Confirmation
+				</h2>
+			</div>
+		</div>
+		{{> AuditConfirmationsAuditConfirmationsPendingEditEditForm}}
+	</div>
+</template>
+
+<template name="AuditConfirmationsAuditConfirmationsPendingEditEditForm">
+	<div id="audit-confirmations-audit-confirmations-pending-edit-edit-form" class="">
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-date_received">
+				<label for="date_received">
+					Date Received
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_received" value="{{formatDate audit.date_received 'DD/MM/YYYY'}}" class="form-control " autofocus="autofocus" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-customer_name">
+				<label for="customer_name">
+					Customer Name
+				</label>
+				<div class="input-div">
+					<input type="text" name="customer_name" value="{{audit.customer_name}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-customer_number">
+				<label for="customer_number">
+					Customer Number
+				</label>
+				<div class="input-div">
+					<input type="text" name="customer_number" value="{{audit.customer_number}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-sender">
+				<label for="sender">
+					Sender
+				</label>
+				<div class="input-div">
+					<input type="text" name="sender" value="{{audit.sender}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-branch">
+				<label for="branch">
+					Branch
+				</label>
+				<div class="input-div">
+					<input type="text" name="branch" value="{{audit.branch}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-year_of_audit">
+				<label for="year_of_audit">
+					Year of Audit
+				</label>
+				<div class="input-div">
+					<input type="text" name="year_of_audit" value="{{audit.year_of_audit}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-charges_collected">
+				<label for="charges_collected">
+					Charges Collected?
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="charges_collected" data-type="array">
+						<option value="no" {{optionIsSelected audit.charges_collected "no"}}>							No</option>
+						<option value="yes" {{optionIsSelected audit.charges_collected "yes"}}>							Yes</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount_collected">
+				<label for="amount_collected">
+					Amount Collected
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount_collected" value="{{audit.amount_collected}}" class="form-control " required="required" data-type="integer" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_dispatched">
+				<label for="date_dispatched">
+					Date Dispatched To Branch
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_dispatched" value="{{formatDate audit.date_dispatched 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="status" data-type="array">
+						<option value="pending" {{optionIsSelected audit.status "pending"}}>							Pending</option>
+						<option value="closed" {{optionIsSelected audit.status "closed"}}>							Closed</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-comments">
+				<label for="comments">
+					Comments (If Any)
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="comments">{{audit.comments}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

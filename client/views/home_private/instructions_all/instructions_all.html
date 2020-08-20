@@ -1,0 +1,179 @@
+<template name="HomePrivateInstructionsAll">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<h2 id="page_title" class="pull-left">
+					All Lawyer Instructions
+				</h2>
+			</div>
+		</div>
+		{{> HomePrivateInstructionsAllView}}
+	</div>
+</template>
+
+<template name="HomePrivateInstructionsAllView">
+	<div id="home-private-instructions-all-view" class="">
+		<form id="dataview-controls" class="form-inline">
+			<div id="dataview-controls-search">
+				<div id="dataview-controls-search-group" class="input-group">
+					<input type="text" class="form-control" id="dataview-search-input" placeholder="Search" name="search" value="{{searchString}}" autofocus="autofocus">
+					<span class="input-group-btn">
+						<button type="button" id="dataview-search-button" class="btn btn-primary">
+							<span class="fa fa-search">
+							</span>
+						</button>
+					</span>
+				</div>
+			</div>
+			<div id="dataview-controls-export" class="form-group">
+				{{#if isNotEmpty}}
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" id="dataview-export-default">
+						Export
+					</button>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<span class="caret">
+						</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li>
+							<a href="#" id="dataview-export-csv">
+								Export to CSV
+							</a>
+						</li>
+						<li>
+							<a href="#" id="dataview-export-tsv">
+								Export to TSV
+							</a>
+						</li>
+						<li>
+							<a href="#" id="dataview-export-json">
+								Export to JSON
+							</a>
+						</li>
+					</ul>
+				</div>
+				{{/if}}
+			</div>
+		</form>
+		{{#if isNotEmpty}}
+		<div id="dataview-data">
+			{{#if viewAsTable}} {{> HomePrivateInstructionsAllViewTable}} {{/if}}
+		</div>
+		<nav aria-label="...">
+			<ul class="pager">
+				{{#if gotPrevPage}}
+				<li>
+					<a href="#" class="prev-page-link">
+						Previous page
+					</a>
+					&nbsp;
+				</li>
+				{{/if}}
+					{{#if gotNextPage}}
+				<li>
+					&nbsp;
+					<a href="#" class="next-page-link">
+						Next page
+					</a>
+				</li>
+				{{/if}}
+			</ul>
+		</nav>
+		{{else}}
+			{{#if isNotFound}}
+		<div class="alert alert-warning">
+			"{{searchString}}" not found.
+		</div>
+		{{else}}
+		<div class="alert alert-info">
+			Empty.
+		</div>
+		{{/if}}
+		{{/if}}
+	</div>
+</template>
+
+<template name="HomePrivateInstructionsAllViewTable">
+	<table id="dataview-table" class="table table-striped">
+		<thead id="dataview-table-header">
+			<tr id="dataview-table-header-row">
+				<th class="th-sortable" data-sort="date">
+					Date of Instruction
+				</th>
+				<th class="th-sortable" data-sort="lawyer.name">
+					Lawyer
+				</th>
+				<th class="th-sortable" data-sort="borrower">
+					Borrower
+				</th>
+				<th class="th-sortable" data-sort="banking_segment.name">
+					Banking Segment
+				</th>
+				<th class="th-sortable" data-sort="collateral">
+					Collateral Details
+				</th>
+				<th>
+					Latest Update
+				</th>
+				<th class="th-sortable" data-sort="update_date">
+					Date of Update
+				</th>
+				<th class="th-sortable" data-sort="action_pending_with">
+					Action Pending With
+				</th>
+				<th class="th-sortable" data-sort="rm">
+					Relationship Manager
+				</th>
+				<th class="th-sortable" data-sort="undertaking_issued">
+					Undertaking Issued?
+				</th>
+				<th class="th-sortable" data-sort="undertaking_end_date">
+					Undertaking Deadline
+				</th>
+			</tr>
+		</thead>
+		<tbody id="dataview-table-items">
+			{{#each instructions_all_paged}} {{> HomePrivateInstructionsAllViewTableItems}} {{/each}}
+		</tbody>
+	</table>
+</template>
+
+<template name="HomePrivateInstructionsAllViewTableItems">
+	<tr id="dataview-table-items-row">
+		<td>
+			{{formatDate date 'DD-MM-YYYY'}}
+		</td>
+		<td>
+			{{lawyer.name}}
+		</td>
+		<td>
+			{{borrower}}
+		</td>
+		<td>
+			{{banking_segment.name}}
+		</td>
+		<td>
+			{{collateral}}
+		</td>
+		<td>
+			{{update}}
+		</td>
+		<td>
+			{{formatDate update_date 'DD-MM-YYYY'}}
+		</td>
+		<td>
+			{{action_pending_with}}
+		</td>
+		<td>
+			{{rm}}
+		</td>
+		<td>
+			{{undertaking_issued}}
+		</td>
+		<td>
+			{{formatDate undertaking_end_date 'DD-MM-YYYY'}}
+		</td>
+	</tr>
+</template>
+

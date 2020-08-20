@@ -1,0 +1,2334 @@
+{
+	"output_files": [
+		{
+			"path": "client/views/router.js",
+			"checksum": "ea229263adfc624d8aca846436dfc6d4c6734e8b"
+		},
+		{
+			"path": "server/controllers/router.js",
+			"checksum": "f9d076cc64b65aa4ce85d9ca7272d8cfefc46694"
+		},
+		{
+			"path": "client/client.js",
+			"checksum": "a2efee43465b67a622352b90fe0f12a78114e4e5"
+		},
+		{
+			"path": "server/server.js",
+			"checksum": "77869a59c152f88079107ca41398a8712426273b"
+		},
+		{
+			"path": "client/views/not_found/not_found.html",
+			"checksum": "df91b51c0a4787a26c4a7ea8ad72ca8310f72b41"
+		},
+		{
+			"path": "client/views/not_found/not_found.js",
+			"checksum": "b399a9a22e2f99c058a00b68bf264a244f09deaf"
+		},
+		{
+			"path": "client/views/loading/loading.html",
+			"checksum": "99e97ba60ddf18b9ed3977aa1f73b1fe3494922a"
+		},
+		{
+			"path": "client/views/loading/loading.js",
+			"checksum": "bd568a6b49a113afe91fedda35a96125c9731a87"
+		},
+		{
+			"path": "client/styles/styles/theme/variables.import.less",
+			"checksum": "56b56a0b9e034deecddf5ce9313dd0158d82f564"
+		},
+		{
+			"path": "client/styles/styles/theme/themefix.import.less",
+			"checksum": "4c226a1a3040c3f3fa6846f4ddf2c48e579dd045"
+		},
+		{
+			"path": "client/styles/styles/theme/theme.import.less",
+			"checksum": "f04733519720132ea291b6b3ad138181bf83bab4"
+		},
+		{
+			"path": "client/styles/styles/theme/bootswatch.import.less",
+			"checksum": "71392c0905f85d6ec901a059782781bc5e5b7d45"
+		},
+		{
+			"path": "client/styles/styles/styles.less",
+			"checksum": "4dd01fbca4d109647f5a6ef87511e625e78b56d9"
+		},
+		{
+			"path": "client/views/layout/layout.html",
+			"checksum": "3734127d6e777e247eeb4f3809ea04e9a0b98a68"
+		},
+		{
+			"path": "client/views/layout/layout.js",
+			"checksum": "c490e9e828619cc0b01178fb13ca8a56610f1d18"
+		},
+		{
+			"path": "client/views/home_public/home_public.html",
+			"checksum": "fb29dd9bededb3ac3afc3a7758c9f05af3c3d150"
+		},
+		{
+			"path": "client/views/home_public/home_public.js",
+			"checksum": "76f7fad7356f508c2664c309407fe23ee3f643d1"
+		},
+		{
+			"path": "client/views/home_public/home_public_controller.js",
+			"checksum": "12cee04470a968b54f83f3d6b08fd5bac77bf068"
+		},
+		{
+			"path": "client/views/login/login.html",
+			"checksum": "98d225bfca233bc43dfe8dee374ee170b829f02b"
+		},
+		{
+			"path": "client/views/login/login.js",
+			"checksum": "62d109b30844c95ced6d9316ccdc555cbd58fe28"
+		},
+		{
+			"path": "client/views/login/login_controller.js",
+			"checksum": "12ff3618658671871ba2358d300c9bc014e90c32"
+		},
+		{
+			"path": "client/views/register/register.html",
+			"checksum": "6f6a9f30c8dbeaf9c31335ab089db1bbe4aefacb"
+		},
+		{
+			"path": "client/views/register/register.js",
+			"checksum": "ffde23d9d657d642fc575a082eca518820a95265"
+		},
+		{
+			"path": "client/views/register/register_controller.js",
+			"checksum": "8e750fdc97f202c89ac042e33e5834b30d85fb49"
+		},
+		{
+			"path": "client/views/verify_email/verify_email.html",
+			"checksum": "db1771ff15f3af2c72830abeb2896158045d4f72"
+		},
+		{
+			"path": "client/views/verify_email/verify_email.js",
+			"checksum": "62d5ebc927a942911174e5ae1ed5616320ed0c64"
+		},
+		{
+			"path": "client/views/verify_email/verify_email_controller.js",
+			"checksum": "86f5c9336655d11a5d388bbd4973e7fc24e46644"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password.html",
+			"checksum": "d28a61ac325a7ee0fbdf8f805a11ffd9f488f219"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password.js",
+			"checksum": "fc7560f5782847c26b58f15f160aaa2e4c5646eb"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password_controller.js",
+			"checksum": "ba551d388f58731f999079653329747e3195446c"
+		},
+		{
+			"path": "client/views/reset_password/reset_password.html",
+			"checksum": "59b305ffe597317a5f904dd3321aa6ef0d82ba33"
+		},
+		{
+			"path": "client/views/reset_password/reset_password.js",
+			"checksum": "266da8ff02af1da2025807d0d10ca90f34abc6aa"
+		},
+		{
+			"path": "client/views/reset_password/reset_password_controller.js",
+			"checksum": "2135c4a7f8496142c1cbfb00bbe31c11559cc0e8"
+		},
+		{
+			"path": "client/views/home_private/home_private.html",
+			"checksum": "d731e893fa3d6f79772e4c3cbf2b8f37fbb89b57"
+		},
+		{
+			"path": "client/views/home_private/home_private.js",
+			"checksum": "db7e4db30c618041f609a26d1fb25107594b365b"
+		},
+		{
+			"path": "client/views/home_private/home_private_controller.js",
+			"checksum": "214409e27ae9dba0722e00c4819aa3eb5d1d0d1b"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/instructions_incomplete.html",
+			"checksum": "83941bcbf74b7b41b453bed79817397f583cec7b"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/instructions_incomplete.js",
+			"checksum": "0ce1125384d734bab2014be764fc04f1f5c2c674"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/instructions_incomplete_controller.js",
+			"checksum": "f19d27de05c4b83b335187aa9aafccb27eb8a8a7"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/insert/insert.html",
+			"checksum": "69671b0c727d7e227ce270b46ba69d0c6fc9b631"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/insert/insert.js",
+			"checksum": "40afd10b9347758524ea01ad5d107160dbea6b62"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/insert/insert_controller.js",
+			"checksum": "106697cd1119d2b8aa6d87d22a9d56c361493ad0"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/edit/edit.html",
+			"checksum": "375578deff473e05670d153eae7bbca7ffb4b03b"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/edit/edit.js",
+			"checksum": "dd1f255a77b7841dba1f08f229ea57960dd9762b"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/edit/edit_controller.js",
+			"checksum": "b505f1e13f27ac9ed9d3c493025f3c741e6bafbe"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/details/details.html",
+			"checksum": "630bd01c1f7c121508e6820df038c879999c8b7a"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/details/details.js",
+			"checksum": "baae4ba06f071482897c1b6c3f669f63e1ccfe23"
+		},
+		{
+			"path": "client/views/home_private/instructions_incomplete/details/details_controller.js",
+			"checksum": "c384e377b57fc88eea3e7ce8148ce0d69aa7e966"
+		},
+		{
+			"path": "client/views/home_private/instructions_all/instructions_all.html",
+			"checksum": "15b1906f26a5c0c7e74a24328c6ec7d69fc0eeb6"
+		},
+		{
+			"path": "client/views/home_private/instructions_all/instructions_all.js",
+			"checksum": "115d89b4d13bc39838525f4e2a2de82b1c95d74a"
+		},
+		{
+			"path": "client/views/home_private/instructions_all/instructions_all_controller.js",
+			"checksum": "83362915ab46240f796f66ece419d50fbf3a0052"
+		},
+		{
+			"path": "client/views/home_private/instructions_complete/instructions_complete.html",
+			"checksum": "9594993ef0dee9525f4c026d2cc22ee1033f5c77"
+		},
+		{
+			"path": "client/views/home_private/instructions_complete/instructions_complete.js",
+			"checksum": "3aa809b3a7833d25fe6ffa7b3109b2cfa48acb4b"
+		},
+		{
+			"path": "client/views/home_private/instructions_complete/instructions_complete_controller.js",
+			"checksum": "eb149085af2d4aa5ce3b098fe9716b3e6723bb63"
+		},
+		{
+			"path": "client/views/home_private/lawyers_in_panel/lawyers_in_panel.html",
+			"checksum": "087f63fff4d0ec0a6a598e98ff2ef564bc25489a"
+		},
+		{
+			"path": "client/views/home_private/lawyers_in_panel/lawyers_in_panel.js",
+			"checksum": "3eef0c57693b07ea31e6b77b3cd3af7edee9f57a"
+		},
+		{
+			"path": "client/views/home_private/lawyers_in_panel/lawyers_in_panel_controller.js",
+			"checksum": "0a00619fe856075e75ee0b93e0e071f58f820528"
+		},
+		{
+			"path": "client/views/home_private/pending_instructions_with_undertakings/pending_instructions_with_undertakings.html",
+			"checksum": "85bec7c4bb7f54aef9f5be235a3cf86b245bf549"
+		},
+		{
+			"path": "client/views/home_private/pending_instructions_with_undertakings/pending_instructions_with_undertakings.js",
+			"checksum": "3141017707d689b247e67c54261f911b967cd68a"
+		},
+		{
+			"path": "client/views/home_private/pending_instructions_with_undertakings/pending_instructions_with_undertakings_controller.js",
+			"checksum": "26604586a2dd1ae584a0f23fdc3b30b833ed3b38"
+		},
+		{
+			"path": "client/views/admin/admin.html",
+			"checksum": "84c24cb2f48aa06da66b9c50fc98570b076efbb2"
+		},
+		{
+			"path": "client/views/admin/admin.js",
+			"checksum": "f13550a4a045f79b72da1bc0570aad61a47a8e7a"
+		},
+		{
+			"path": "client/views/admin/admin_controller.js",
+			"checksum": "e24cf4553d7a23ef09b037f72a49cf6ba5fa1bb5"
+		},
+		{
+			"path": "client/views/admin/users/users.html",
+			"checksum": "9608caeb8ac4e607d7f7ad4ca06417d3b239e9ac"
+		},
+		{
+			"path": "client/views/admin/users/users.js",
+			"checksum": "4efbeae4eb73594387e3129bafd5f241bdf1252d"
+		},
+		{
+			"path": "client/views/admin/users/users_controller.js",
+			"checksum": "147ecf36253b56622f54a4367416bfb9c94063bc"
+		},
+		{
+			"path": "client/views/admin/users/details/details.html",
+			"checksum": "8bc1aa4c970b992822e9bf1d782564dc61fa5892"
+		},
+		{
+			"path": "client/views/admin/users/details/details.js",
+			"checksum": "ea2a14c6e7ebb41001fe4584d554a604316f2412"
+		},
+		{
+			"path": "client/views/admin/users/details/details_controller.js",
+			"checksum": "f6b5788ba43022986de8fee533dcadb79dbf6395"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert.html",
+			"checksum": "50171df0a14e4fe9c9c1f2f0d724117b570d5f77"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert.js",
+			"checksum": "44fa1d070fa09badc1805cb215f50739e307bb79"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert_controller.js",
+			"checksum": "699c372dc2fee76c38bb2b470d7d583d4df7ebcb"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit.html",
+			"checksum": "53146447de4100720c07f73ba98f28921074a087"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit.js",
+			"checksum": "7b632420a056dac009539f272c634938905f0386"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit_controller.js",
+			"checksum": "39da99351d90fc0ecd60aefc186c01459c89cf65"
+		},
+		{
+			"path": "client/views/user_settings/user_settings.html",
+			"checksum": "b66575487b5619805f20728f1f80e96e8eef701d"
+		},
+		{
+			"path": "client/views/user_settings/user_settings.js",
+			"checksum": "af54981da1a1a6c1016a6960419b07ff41b10943"
+		},
+		{
+			"path": "client/views/user_settings/user_settings_controller.js",
+			"checksum": "7407febf3e9224c9ee45b2f07417aa26642e2c7b"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile.html",
+			"checksum": "5d0baa3f4db63e235507505706c17fed8b9061a0"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile.js",
+			"checksum": "d558e3cb439b8bf4ba17e41ca2efbb32c2f636f2"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile_controller.js",
+			"checksum": "f48717635d11e5d03b86f95a57ced57098517e8d"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass.html",
+			"checksum": "33e7602afe9295992e2968e9e2f8efd93e3d761a"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass.js",
+			"checksum": "0c551773e4aeafd9df6b886cbcd91db0da7f7432"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass_controller.js",
+			"checksum": "bcb16c084a583d2853e3c68892207bdaca00dee5"
+		},
+		{
+			"path": "client/views/logout/logout.html",
+			"checksum": "ffde068f1a1cd15fdfee1b779579db44096d5975"
+		},
+		{
+			"path": "client/views/logout/logout.js",
+			"checksum": "39f0e9440d7fc5808462928c1f300227941c5837"
+		},
+		{
+			"path": "client/views/logout/logout_controller.js",
+			"checksum": "ee4540fdb88a92e2dca6e0476c262f56d2952445"
+		},
+		{
+			"path": "client/views/laywers/laywers.html",
+			"checksum": "76a25375c37bd5efce3a0c6cfb67b300ed6d224c"
+		},
+		{
+			"path": "client/views/laywers/laywers.js",
+			"checksum": "66453a783d0365a7e24f639aca650cae6a204f2a"
+		},
+		{
+			"path": "client/views/laywers/laywers_controller.js",
+			"checksum": "119629ae4f6133baaddd29e2ece48232323c5b9f"
+		},
+		{
+			"path": "client/views/laywers/insert/insert.html",
+			"checksum": "561aefa62aa437d74af540a20d65324a9f5ebefb"
+		},
+		{
+			"path": "client/views/laywers/insert/insert.js",
+			"checksum": "06add7f4543116f41cf56005503dd70f314edd24"
+		},
+		{
+			"path": "client/views/laywers/insert/insert_controller.js",
+			"checksum": "107f3d5f0d76d2b0e0532e3edb1a1164815b259f"
+		},
+		{
+			"path": "client/views/laywers/edit/edit.html",
+			"checksum": "3231a8c9d55b875fc09ac97265fd658242bfc1fe"
+		},
+		{
+			"path": "client/views/laywers/edit/edit.js",
+			"checksum": "39154dbe5e631c66173fd8806189cdf4d56a420a"
+		},
+		{
+			"path": "client/views/laywers/edit/edit_controller.js",
+			"checksum": "0f38f41840ddb59276915ef26347865c890d5ecf"
+		},
+		{
+			"path": "client/views/laywers/details/details.html",
+			"checksum": "a8a50e18a793d3350ead4336e2da591a4e2c5b22"
+		},
+		{
+			"path": "client/views/laywers/details/details.js",
+			"checksum": "fdef7107d9993696403c8074176a0a7b60793bca"
+		},
+		{
+			"path": "client/views/laywers/details/details_controller.js",
+			"checksum": "0a2bba070172285573db6d4112a6906dec3cb241"
+		},
+		{
+			"path": "client/views/instructions/instructions.html",
+			"checksum": "d76e8eb5cfc040696d74aad798ab825fee6f3f49"
+		},
+		{
+			"path": "client/views/instructions/instructions.js",
+			"checksum": "a16f5f6e71725dd82c0171f653888e20480734c0"
+		},
+		{
+			"path": "client/views/instructions/instructions_controller.js",
+			"checksum": "dc09b1a29f3be8c1b2331cbaa650509d5ed9a940"
+		},
+		{
+			"path": "client/views/instructions/insert/insert.html",
+			"checksum": "6da3388e9e634c4d1df0046a88b6a06454f37e1f"
+		},
+		{
+			"path": "client/views/instructions/insert/insert.js",
+			"checksum": "0a66d8ebd5ec7704cf80ddf890e6d8e0e82f4159"
+		},
+		{
+			"path": "client/views/instructions/insert/insert_controller.js",
+			"checksum": "594a2fa0dbfb7887e874a6961be7d5c3a4d2671e"
+		},
+		{
+			"path": "client/views/instructions/edit/edit.html",
+			"checksum": "5bbc467c9bf0de221de94ec1d6902e2bd36400ba"
+		},
+		{
+			"path": "client/views/instructions/edit/edit.js",
+			"checksum": "18f14bf88f84dc05f24c310cd64d02095b1a8dd1"
+		},
+		{
+			"path": "client/views/instructions/edit/edit_controller.js",
+			"checksum": "f348725f97873c9885ce2caf0eab3c68f157fe26"
+		},
+		{
+			"path": "client/views/instructions/details/details.html",
+			"checksum": "f4504455d9ddd17c312d587155c8287dfb5395ff"
+		},
+		{
+			"path": "client/views/instructions/details/details.js",
+			"checksum": "0327ce45d80c83d4eb709e02339f1eaa9c9ed5fe"
+		},
+		{
+			"path": "client/views/instructions/details/details_controller.js",
+			"checksum": "eea166207a5d8f2d844832095be191dd8eb9e176"
+		},
+		{
+			"path": "client/views/deferrals/deferrals.html",
+			"checksum": "c2c226662a02c2e15a65684da5a7a61d206bd64e"
+		},
+		{
+			"path": "client/views/deferrals/deferrals.js",
+			"checksum": "02132faef0fecf46e93add109c0e39fe5c30dc04"
+		},
+		{
+			"path": "client/views/deferrals/deferrals_controller.js",
+			"checksum": "c751ef4c382c44208bff6a51aa7796ad51ed55f4"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/pending_deferrals.html",
+			"checksum": "b7b7388aa56ee509998dd8a9e01015871b25e484"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/pending_deferrals.js",
+			"checksum": "7c0e2302cba020aa6cfa1b8b8f640e8592856d30"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/pending_deferrals_controller.js",
+			"checksum": "f5294f15fd7a203de8f62819a065398380344604"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/insert/insert.html",
+			"checksum": "2a3bacb01616cfaa9fc8e8741dad3805c422cb73"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/insert/insert.js",
+			"checksum": "854b7de2dcd43da93cdcc3bebb554b3528755777"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/insert/insert_controller.js",
+			"checksum": "65d0c81d461abf1cb55975da55ef5ca0aca536da"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/edit/edit.html",
+			"checksum": "81f8d6be41c6a70c8d40e4a1f59aed8046c51c31"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/edit/edit.js",
+			"checksum": "2f54df2d5ddf7f62c3f8d9fcb0452f2abab4c294"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/edit/edit_controller.js",
+			"checksum": "5f11298f3a056098baab3ed1376c3975f7dd0300"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/details/details.html",
+			"checksum": "49797845f4d2d1a39632a09f991da95ed7594e18"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/details/details.js",
+			"checksum": "0c0e3ece0bf7962dae3b0262569b50987eb42dd7"
+		},
+		{
+			"path": "client/views/deferrals/pending_deferrals/details/details_controller.js",
+			"checksum": "a34254d6df16efdc23cb58e1e4cb58f451a10ab4"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/closed_deferrals.html",
+			"checksum": "0c6306ce16f622f5342e8c1a148836437cad010b"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/closed_deferrals.js",
+			"checksum": "0dff3ea1fb3d529d64d23381a58fd3ec43108e12"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/closed_deferrals_controller.js",
+			"checksum": "38cf569606b373c49ae74407ded8cdf736f8f651"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/edit/edit.html",
+			"checksum": "62fa099dea12486b68cbbf1b375ac51e83771430"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/edit/edit.js",
+			"checksum": "ef836575544ff1c0747d5b10b7f37c552695146d"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/edit/edit_controller.js",
+			"checksum": "864be580c9edf4698bb341ad0cd1fef7311f5a73"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/details/details.html",
+			"checksum": "f83b5bd09e024f04e209266bc87be44ea950d638"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/details/details.js",
+			"checksum": "494c4703bd88b0a104c1b0c5a15b6375103e0445"
+		},
+		{
+			"path": "client/views/deferrals/closed_deferrals/details/details_controller.js",
+			"checksum": "2372c3bd5b8a5dece9ff435b237c21941d57e2d5"
+		},
+		{
+			"path": "client/views/insurers/insurers.html",
+			"checksum": "1e4cac83b627d9f41734f468dabc30788d7effb8"
+		},
+		{
+			"path": "client/views/insurers/insurers.js",
+			"checksum": "4fad7d9896ff2bfca5117323bfe91d06b90fbe8a"
+		},
+		{
+			"path": "client/views/insurers/insurers_controller.js",
+			"checksum": "f9a8a7a42e23fe4e547a5f319dac1a112a448239"
+		},
+		{
+			"path": "client/views/insurers/insert/insert.html",
+			"checksum": "981004829f58950e3562db34088dbbde44ee100b"
+		},
+		{
+			"path": "client/views/insurers/insert/insert.js",
+			"checksum": "8d2b1f857b9b001de77963b619b2e1958d68e218"
+		},
+		{
+			"path": "client/views/insurers/insert/insert_controller.js",
+			"checksum": "bcc2e4d619107ee5704ded23a6e0e7b1a7dbcd12"
+		},
+		{
+			"path": "client/views/insurers/edit/edit.html",
+			"checksum": "401f799cef6f10aaa05cc1abc71c8918e2bfa017"
+		},
+		{
+			"path": "client/views/insurers/edit/edit.js",
+			"checksum": "6a5509ad2e4540cef54f16765444fdb405629a59"
+		},
+		{
+			"path": "client/views/insurers/edit/edit_controller.js",
+			"checksum": "e62764500aaac5973ab113a7fdd5fcb33662815c"
+		},
+		{
+			"path": "client/views/insurers/details/details.html",
+			"checksum": "6c2b1225079830b0c89a36d13138029ea9c68771"
+		},
+		{
+			"path": "client/views/insurers/details/details.js",
+			"checksum": "73ece5fbd263d0aa9df1079f18ab65c61dd2fe83"
+		},
+		{
+			"path": "client/views/insurers/details/details_controller.js",
+			"checksum": "fe34a7c73acb9f9efd3ef3cf1d70a09acfc464c0"
+		},
+		{
+			"path": "client/views/valuers/valuers.html",
+			"checksum": "d081e32487ff64e64a84483294e5dde53de35891"
+		},
+		{
+			"path": "client/views/valuers/valuers.js",
+			"checksum": "8a9d2743a907183b7885fe9e8be578657494ff7e"
+		},
+		{
+			"path": "client/views/valuers/valuers_controller.js",
+			"checksum": "ef6a155e3b468e1bf6086b2f7cbf7598d087fc65"
+		},
+		{
+			"path": "client/views/valuers/insert/insert.html",
+			"checksum": "42105ecf5ab0974515e08211e0609598bcb239e7"
+		},
+		{
+			"path": "client/views/valuers/insert/insert.js",
+			"checksum": "4ccb08fe7bdf07b965d5279dd02783878ea686ef"
+		},
+		{
+			"path": "client/views/valuers/insert/insert_controller.js",
+			"checksum": "60c4f2fa6940cc0d445eb02f667092ab996c7c26"
+		},
+		{
+			"path": "client/views/valuers/edit/edit.html",
+			"checksum": "00b196615b1519801bd8a7cb3258c833059b4eea"
+		},
+		{
+			"path": "client/views/valuers/edit/edit.js",
+			"checksum": "b0c2b40b46ad6d253e5609b1fc3a8fce4ded4f3c"
+		},
+		{
+			"path": "client/views/valuers/edit/edit_controller.js",
+			"checksum": "3656fa43214ed698f6e4b8799079f76567f2f293"
+		},
+		{
+			"path": "client/views/valuers/details/details.html",
+			"checksum": "c72ce8f0c6ae3b400c495fbf5f71e5feb85078a0"
+		},
+		{
+			"path": "client/views/valuers/details/details.js",
+			"checksum": "02d4ff7dae3642ac31a9804363085a45b4b84f61"
+		},
+		{
+			"path": "client/views/valuers/details/details_controller.js",
+			"checksum": "61eb7799015c53f58ff61e3956eb1be942f7df59"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions.html",
+			"checksum": "b92e3c357103e579d3f683ae2e8dc5a05a1b6df8"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions.js",
+			"checksum": "29edc0711596acace7e75f4ac099a05150eb088c"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_controller.js",
+			"checksum": "59a0aadebd82486cb581ae61ba353e479f9fb297"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/valuer_instructions_pending.html",
+			"checksum": "a31326c33c63c181e95dbeb929ddb4efa0388892"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/valuer_instructions_pending.js",
+			"checksum": "47bae301b66805a6623e8fe7484f0bb0cd7d4d05"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/valuer_instructions_pending_controller.js",
+			"checksum": "ce5a1c84d80a70799d0828e309179652d071224f"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/insert/insert.html",
+			"checksum": "01fbfaeb65880f0d12fed027e540f9c0c0fbda74"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/insert/insert.js",
+			"checksum": "3ce749de1ce8815d4d4dd2b0af710164cfa9a1c2"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/insert/insert_controller.js",
+			"checksum": "b593938cd45045ba063383b3d2dc1a27c8f80c0d"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/update/update.html",
+			"checksum": "a0a4eb85f40b5d42a5eec01851aea4b861ad44ef"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/update/update.js",
+			"checksum": "e2e448f72089ff7bec689368bd23b2aa6e35855b"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/update/update_controller.js",
+			"checksum": "1fc0ff1b50884e23230b55f56df79bac865f01f0"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/details/details.html",
+			"checksum": "7092595f319ad7a2d75e176e969cf78173dc7bcf"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/details/details.js",
+			"checksum": "8531f81f7e6be57f5f1ff9d36aa6fcbd1380f44b"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_pending/details/details_controller.js",
+			"checksum": "fbe94e1dd4b274321cf079973d4d207dc0bb1860"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/valuer_instructions_closed.html",
+			"checksum": "d1b6f0f561fe566d527b9b87c28010c0df45ef41"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/valuer_instructions_closed.js",
+			"checksum": "3b0799dfc1152a1ace94329442bd962265604b71"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/valuer_instructions_closed_controller.js",
+			"checksum": "ec0ece41e89a977bb40b35ca4fb5879eddfa0aef"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/update/update.html",
+			"checksum": "d5cd8197283d6bd4cc86f8d1ac7899d17d93f706"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/update/update.js",
+			"checksum": "bbba1de39a95271b320ca56c7bb9bd301ac58ad1"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/update/update_controller.js",
+			"checksum": "c10823e98a9a73ce88e047c28464977b0f3db69c"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/details/details.html",
+			"checksum": "5adc80d4641c6ff00b386849670603a1d361e155"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/details/details.js",
+			"checksum": "87eb1a0eb1f7c1add8eed17e71852436ab4c28d6"
+		},
+		{
+			"path": "client/views/valuer_instructions/valuer_instructions_closed/details/details_controller.js",
+			"checksum": "5c3f07dddb5a09fd985fdd03e1d1e829729117a7"
+		},
+		{
+			"path": "client/views/complaints/complaints.html",
+			"checksum": "19a148f447ca958b3fe7fcebc41d086ad754f3a6"
+		},
+		{
+			"path": "client/views/complaints/complaints.js",
+			"checksum": "d3f47f09796620492b734e22c6cf4371ea619176"
+		},
+		{
+			"path": "client/views/complaints/complaints_controller.js",
+			"checksum": "6f8d1a9f7892581ad3412383decd48002804c739"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/complaints_pending.html",
+			"checksum": "14712b6d3ac907282de02c908ff9bdd35d153a9a"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/complaints_pending.js",
+			"checksum": "84f0ccdff6758c67498f25f0fdf8c748494c3902"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/complaints_pending_controller.js",
+			"checksum": "24d825ebf46051f6fb04f4145f4af137d709fd09"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/insert/insert.html",
+			"checksum": "8314a322054c2c66fa7a96478e114a879758c62d"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/insert/insert.js",
+			"checksum": "03eb7b13878a64069160552793a9af31806d48d3"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/insert/insert_controller.js",
+			"checksum": "63b77e0c0890da6af234ce70b6814b3cd3ddcb91"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/edit/edit.html",
+			"checksum": "42d7edffebc85f94a2236c8b1f6763dbae48128d"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/edit/edit.js",
+			"checksum": "00599409e1a4011c5b9d5ebf7200866b857bc558"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/edit/edit_controller.js",
+			"checksum": "953946f66002cfd5d80db2c1fdb172c057989c54"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/details/details.html",
+			"checksum": "8d65e7171d11f1887772499bafcb8a53cd1d0178"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/details/details.js",
+			"checksum": "c2bb26e12fdd0e64945a500b16d4aa703563aaa6"
+		},
+		{
+			"path": "client/views/complaints/complaints_pending/details/details_controller.js",
+			"checksum": "b23b6ade6a843c91efcc70d92ccf646a8ba5d37b"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/complaints_closed.html",
+			"checksum": "41e4c6ea3d1aa570532215e57c6fc458197fc477"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/complaints_closed.js",
+			"checksum": "36d70541abc694f242917e4ed06ad62e703ef48f"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/complaints_closed_controller.js",
+			"checksum": "518761d4a9616c5b7ec42f54aaabf1ac54e5b97d"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/edit/edit.html",
+			"checksum": "26fa03a471733227283ac06e54f4111cb23d4fd1"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/edit/edit.js",
+			"checksum": "0f6137cd410cd19d807a79577f0ffacf70661ea2"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/edit/edit_controller.js",
+			"checksum": "629fbd146a97a04f998afe11bf4502d2ce44eb40"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/details/details.html",
+			"checksum": "0ff250154cc3f014fa44844f1eb4250c8675be01"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/details/details.js",
+			"checksum": "6b26a611fd2546f716606e30204e625df743b04e"
+		},
+		{
+			"path": "client/views/complaints/complaints_closed/details/details_controller.js",
+			"checksum": "6a5a24cd04d547daedb608493e171d0be1618bdf"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations.html",
+			"checksum": "9038907cb9db4648ec84c0a0cfb1e5e5ef9e3bf8"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations.js",
+			"checksum": "762d97bac429111a50b7cdcf558e23ad37f98f93"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_controller.js",
+			"checksum": "3a99d750cb93e9786042817b3a48ad8899c315dc"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/audit_confirmations_pending.html",
+			"checksum": "b87b28f45112a310487c7ca90e4d56b3341f641d"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/audit_confirmations_pending.js",
+			"checksum": "e2046dee5dcef4cd6b353366c2a7839b5bb98c43"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/audit_confirmations_pending_controller.js",
+			"checksum": "02b539f622d5b381e4864448140f5d46021648bf"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/insert/insert.html",
+			"checksum": "f04157d387c2326b1073f37f2e03637c1b1a03c0"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/insert/insert.js",
+			"checksum": "a94e05743da0816431b6a94744df9041992ed0d2"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/insert/insert_controller.js",
+			"checksum": "ee061efd5c79412918813e90a2a1d1e97ad9a052"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/edit/edit.html",
+			"checksum": "cc4adaee0549d1dfc5fafc818c223b6369a28dbd"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/edit/edit.js",
+			"checksum": "2b157c49b7168a0e5fbfaae3b9e4b4a832bff4d6"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/edit/edit_controller.js",
+			"checksum": "5a7786fc6c6490e7f74637348fd962e702132ab8"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/details/details.html",
+			"checksum": "8b4cc56ce6c7fb9e8aa5b071afc9603ed79977a9"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/details/details.js",
+			"checksum": "79b354ef9bcd24929b62c51a372c144939feb561"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_pending/details/details_controller.js",
+			"checksum": "3ddc99905c8cdf2f94084a75e816c600fb0901d9"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/audit_confirmations_closed.html",
+			"checksum": "df7e528cc689b164ffb14fdf291f26f0620857b7"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/audit_confirmations_closed.js",
+			"checksum": "01293661676e48652f2a100e7c61465dd8a7747a"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/audit_confirmations_closed_controller.js",
+			"checksum": "e169baf272609c330d7db2730be3b47e33b91203"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/edit/edit.html",
+			"checksum": "4a74e9c067bc293dfae44ca27252de15b0cdc328"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/edit/edit.js",
+			"checksum": "d4c7f97dc2b58d7e99ac8d5f6a87ec7fc82f0dba"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/edit/edit_controller.js",
+			"checksum": "46cf7449a5213bd3a49bde34522b088c350cebac"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/details/details.html",
+			"checksum": "fcf736b102c4e795770bc4903a8f19db53efdb6f"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/details/details.js",
+			"checksum": "99a181fbfba7cc620499c59b7037bd8844b501f5"
+		},
+		{
+			"path": "client/views/audit_confirmations/audit_confirmations_closed/details/details_controller.js",
+			"checksum": "886c4e976f1137e0cb9ceb698aca9dd24cf978af"
+		},
+		{
+			"path": "client/views/brds/brds.html",
+			"checksum": "a51b8b19ede54a9977e635bcd5df4086c876aba2"
+		},
+		{
+			"path": "client/views/brds/brds.js",
+			"checksum": "31c93ee604a810c78d4b2e1c3f973da2a113abda"
+		},
+		{
+			"path": "client/views/brds/brds_controller.js",
+			"checksum": "d581ab61eb1f8cdef872f30458c7fab6d5742254"
+		},
+		{
+			"path": "client/views/brds/brds_pending/brds_pending.html",
+			"checksum": "d9f2e933f5036762779fff9e1912925fca520ffa"
+		},
+		{
+			"path": "client/views/brds/brds_pending/brds_pending.js",
+			"checksum": "6f299895122a23e489439ccc4019f068f8a79476"
+		},
+		{
+			"path": "client/views/brds/brds_pending/brds_pending_controller.js",
+			"checksum": "8bcfb80abbf2b15aa8a0b274d69dbbb9be719167"
+		},
+		{
+			"path": "client/views/brds/brds_pending/insert/insert.html",
+			"checksum": "5274af0177285164ea0dff492784e4e071ccfb38"
+		},
+		{
+			"path": "client/views/brds/brds_pending/insert/insert.js",
+			"checksum": "edf79930d3300db5e293eac95abcb32df4943905"
+		},
+		{
+			"path": "client/views/brds/brds_pending/insert/insert_controller.js",
+			"checksum": "c82a61eb3a17497edcadeccea8cba49c47d1b309"
+		},
+		{
+			"path": "client/views/brds/brds_pending/edit/edit.html",
+			"checksum": "09c2df79bff0780208e5d07f173788bf053b0f6c"
+		},
+		{
+			"path": "client/views/brds/brds_pending/edit/edit.js",
+			"checksum": "2a3d31289f3a96583235ebfb159e98148fdea60b"
+		},
+		{
+			"path": "client/views/brds/brds_pending/edit/edit_controller.js",
+			"checksum": "5afe7a162189f0965be07321bae72d3f8d8e065d"
+		},
+		{
+			"path": "client/views/brds/brds_pending/details/details.html",
+			"checksum": "c6d1a3877c392fa4f464349ce10024379bf591a8"
+		},
+		{
+			"path": "client/views/brds/brds_pending/details/details.js",
+			"checksum": "f09b38141e0c2bc640f208a797e236993bd7f1ea"
+		},
+		{
+			"path": "client/views/brds/brds_pending/details/details_controller.js",
+			"checksum": "c29044ae1b1c138272e46d57bf844fefc43f2117"
+		},
+		{
+			"path": "client/views/brds/brds_closed/brds_closed.html",
+			"checksum": "c83797ffc6dc27b2522ba722b60b5640973d64ae"
+		},
+		{
+			"path": "client/views/brds/brds_closed/brds_closed.js",
+			"checksum": "bce79a4a0be9175ca66f9274f8a5b084d62ef8cc"
+		},
+		{
+			"path": "client/views/brds/brds_closed/brds_closed_controller.js",
+			"checksum": "e09f98152df03de5285aa8616868922dc49758a5"
+		},
+		{
+			"path": "client/views/brds/brds_closed/edit/edit.html",
+			"checksum": "06f53ffb9139afc6fdfa4a52f24453bcafe4c2f3"
+		},
+		{
+			"path": "client/views/brds/brds_closed/edit/edit.js",
+			"checksum": "b4a1495f33c2e0b1a3718d46554d04073dc64076"
+		},
+		{
+			"path": "client/views/brds/brds_closed/edit/edit_controller.js",
+			"checksum": "980ac4e066206c98f5e05c91647cb552e9a1f175"
+		},
+		{
+			"path": "client/views/brds/brds_closed/details/details.html",
+			"checksum": "50bdfd4c39a019c3eaaaf4518a59e17fc7b1666e"
+		},
+		{
+			"path": "client/views/brds/brds_closed/details/details.js",
+			"checksum": "5436f8c7d06834a7d7196286432c4f8398ee09a4"
+		},
+		{
+			"path": "client/views/brds/brds_closed/details/details_controller.js",
+			"checksum": "008b6b560368e463830b9f47e8c9c50421d6840a"
+		},
+		{
+			"path": "client/views/branches/branches.html",
+			"checksum": "94c2140883d74e5c4c8ca19c0857cc66d0d95990"
+		},
+		{
+			"path": "client/views/branches/branches.js",
+			"checksum": "7d00eedaf70fb07dee657912ed70041d04da8da1"
+		},
+		{
+			"path": "client/views/branches/branches_controller.js",
+			"checksum": "10dd04296654031089b3f70508e4c9732f952224"
+		},
+		{
+			"path": "client/views/branches/insert/insert.html",
+			"checksum": "e7664dbbcbdf444f4aba784200764784499a2fd7"
+		},
+		{
+			"path": "client/views/branches/insert/insert.js",
+			"checksum": "c2da43e363b05edc2869fc41e18fbd1472a15ee2"
+		},
+		{
+			"path": "client/views/branches/insert/insert_controller.js",
+			"checksum": "a5ad23e692fc51c5acfe184377f8bc1edf21f510"
+		},
+		{
+			"path": "client/views/branches/update/update.html",
+			"checksum": "fbb56d70e8e427c6ee1ef2e325b0f01af60e3cb4"
+		},
+		{
+			"path": "client/views/branches/update/update.js",
+			"checksum": "0a2218b3f838c9c340435f969b25e1a5e0324d49"
+		},
+		{
+			"path": "client/views/branches/update/update_controller.js",
+			"checksum": "6655967119611ab8f517de688f5a304a006c6efe"
+		},
+		{
+			"path": "client/views/branches/details/details.html",
+			"checksum": "6d4adb5411c94a40b9806a9009d95c4eb0f9e309"
+		},
+		{
+			"path": "client/views/branches/details/details.js",
+			"checksum": "1f96b807b41549f7a3919928bbfaa8b86b0460a7"
+		},
+		{
+			"path": "client/views/branches/details/details_controller.js",
+			"checksum": "eb593484b86074dcbc59bcfd8e95a6aed9edd58d"
+		},
+		{
+			"path": "client/views/branch_facilities/branch_facilities.html",
+			"checksum": "db49d52b1c1c20633495b00d1592aba36185284c"
+		},
+		{
+			"path": "client/views/branch_facilities/branch_facilities.js",
+			"checksum": "b58996d774546b89bc68cf4d207c6d2e08cc41cf"
+		},
+		{
+			"path": "client/views/branch_facilities/branch_facilities_controller.js",
+			"checksum": "d1ea56675c8a8559f1b3f394624ca2448cf4edbb"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/loo_pending.html",
+			"checksum": "15cfae3f73a9c09bfcf804bbe85527d8133474da"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/loo_pending.js",
+			"checksum": "e6b0ad5181c48cc4cab242c09f69906516827a79"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/loo_pending_controller.js",
+			"checksum": "0aa18a33fbf5bb88cb4721dd87665b65ec3b0818"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/insert/insert.html",
+			"checksum": "e7edc49dedf6d32b2dce532be3fc8bf09fc19887"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/insert/insert.js",
+			"checksum": "d142c401c4051494767712716d1ac62c11ad22fa"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/insert/insert_controller.js",
+			"checksum": "686b377a9fb88e02bf1bb43582729a50bdc9f36b"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/update/update.html",
+			"checksum": "07aff069bac194ed023df23617866bf8bcd6d797"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/update/update.js",
+			"checksum": "1604ad77d87c55be22aa8ab330e74748605b757f"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/update/update_controller.js",
+			"checksum": "090dd23f304d8d3046fb5a2de350fb21d8b4dd5b"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/details/details.html",
+			"checksum": "82f7ae5f8fac36b4742c132c8cb3ec699ca59ed5"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/details/details.js",
+			"checksum": "b295b617731f55b130c320451fb9df2777c5dd17"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_pending/details/details_controller.js",
+			"checksum": "078a6f03b9b4d07cf834d1c84145a1452824182a"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/loo_received.html",
+			"checksum": "8b3f2695517ab0fd5de30214964eee1db400c340"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/loo_received.js",
+			"checksum": "ef8d8370b9f0bf98d645977f15c9e8abde02015a"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/loo_received_controller.js",
+			"checksum": "989661677b354413e91d2617f50bceb674e0af94"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/insert/insert.html",
+			"checksum": "7fa05de046f8405f86a94ead0fb5e19943c20438"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/insert/insert.js",
+			"checksum": "2ff9a03a9fd91c2a7f67c11095707ac110f2b47f"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/insert/insert_controller.js",
+			"checksum": "dcc1c0f922109ae7882a74b535432d13de8af1c9"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/update/update.html",
+			"checksum": "0624e53ff472b010f0b498e79303b2f80d0eabef"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/update/update.js",
+			"checksum": "cd2e8c14812d82066be411d36a7f4c933da726cf"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/update/update_controller.js",
+			"checksum": "9ce04f67a309b16c1b1e6b707926515a36acbbcd"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/details/details.html",
+			"checksum": "917a2e8a78b379dfdde66ccbe2af74c12a01536a"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/details/details.js",
+			"checksum": "4d2c7a0b90a8f19ddf81e3b860bbaf0053ae348f"
+		},
+		{
+			"path": "client/views/branch_facilities/loo_received/details/details_controller.js",
+			"checksum": "1e01a49c4c8a9c94689a56ba77919fef5cab24f3"
+		},
+		{
+			"path": "client/views/branch_facilities/all_branch_facilities/all_branch_facilities.html",
+			"checksum": "cac300d3fad8a78720bc6f7237acbb55628f8906"
+		},
+		{
+			"path": "client/views/branch_facilities/all_branch_facilities/all_branch_facilities.js",
+			"checksum": "821419373019db0d248b302123b0e39ee293a084"
+		},
+		{
+			"path": "client/views/branch_facilities/all_branch_facilities/all_branch_facilities_controller.js",
+			"checksum": "978fd93f0045c2e4b037df8383d2ee709447578e"
+		},
+		{
+			"path": "client/views/branch_facilities/all_branch_facilities/details/details.html",
+			"checksum": "fcd4a97185280c5a10be9040350a8f2c8d50e857"
+		},
+		{
+			"path": "client/views/branch_facilities/all_branch_facilities/details/details.js",
+			"checksum": "9525f24feb80c2d0186ac996c245b015404f0668"
+		},
+		{
+			"path": "client/views/branch_facilities/all_branch_facilities/details/details_controller.js",
+			"checksum": "d969ac4acb88d34f5a29b187d42daa11f3362420"
+		},
+		{
+			"path": "client/views/qs/qs.html",
+			"checksum": "7b057030c9704126aa1e8ffa3f87f32b8467dce2"
+		},
+		{
+			"path": "client/views/qs/qs.js",
+			"checksum": "a0a1cca095dd9b5d284ca69e85a9834815629751"
+		},
+		{
+			"path": "client/views/qs/qs_controller.js",
+			"checksum": "5547286cd1376a9dd4dcfd323af9fca71c7c38f6"
+		},
+		{
+			"path": "client/views/qs/insert/insert.html",
+			"checksum": "1584517cfa2ddba7cf5f3b99b8aad350188ccc95"
+		},
+		{
+			"path": "client/views/qs/insert/insert.js",
+			"checksum": "38adc11b296bc70d4ab1b819aaee40c698556ba2"
+		},
+		{
+			"path": "client/views/qs/insert/insert_controller.js",
+			"checksum": "8de89f2afcc2d31bfc000a344e85543138c1150f"
+		},
+		{
+			"path": "client/views/qs/update/update.html",
+			"checksum": "efc479b5621e17ee53263bc1579d823ddfe6bf6f"
+		},
+		{
+			"path": "client/views/qs/update/update.js",
+			"checksum": "8983a48d6dbb3f0b2589bba5db8b56e501f66460"
+		},
+		{
+			"path": "client/views/qs/update/update_controller.js",
+			"checksum": "a1ac5accb4f2669199c80fae77568c5cf2143a1f"
+		},
+		{
+			"path": "client/views/qs/details/details.html",
+			"checksum": "2f81823ce8c0ea935c0049ca3e0c1f1635999071"
+		},
+		{
+			"path": "client/views/qs/details/details.js",
+			"checksum": "f086a631fda3dca116008ba35e5719659369e1a6"
+		},
+		{
+			"path": "client/views/qs/details/details_controller.js",
+			"checksum": "ccfbdcee58946b0931b0d5ccc8eadeaaf6a10c28"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions.html",
+			"checksum": "5071d32ccf6743cad8ece9ad2229292291b79aa4"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions.js",
+			"checksum": "901eab42fd10b6cc4451391bf69979fdf7e130c1"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_controller.js",
+			"checksum": "773842355d6e9eda8310193a47ac1a1f6a554fc2"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/qs_instructions_pending.html",
+			"checksum": "5b0ba53e91bc4d4ef28d1ab8a6f0445d7b328ad6"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/qs_instructions_pending.js",
+			"checksum": "a1ac1d1144a38183a7c1ec4e1b5ac8d5a292295f"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/qs_instructions_pending_controller.js",
+			"checksum": "5bc4094d80220fe7e4836abfdf2a89af1e0729e6"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/insert/insert.html",
+			"checksum": "e32c9525c8db44655f28189cdceb5261ee9c3aee"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/insert/insert.js",
+			"checksum": "15cdc37deeb3ada97b0a660f4ba8f5c74dc76450"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/insert/insert_controller.js",
+			"checksum": "623e26f20a780578962cf708c4153da6ea3fb842"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/update/update.html",
+			"checksum": "dbdd57d78cfc0377e88ce90efeae87de24b4b660"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/update/update.js",
+			"checksum": "e39a64fc7c15922fc25e8b95c2548e42d17f03ea"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/update/update_controller.js",
+			"checksum": "a1e4428d39c7fc2f29263d02d8d44d3d385b72ee"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/details.html",
+			"checksum": "ac4fc24287195268f762d5cf043ee1fd20e5d6bb"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/details.js",
+			"checksum": "a2a400513f5a638d0503c56ab753ceea561796d4"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/details_controller.js",
+			"checksum": "c16d40e18a90874ead20f3c2542c16b8425361bf"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/qs_instructions_history/qs_instructions_history.html",
+			"checksum": "ae625e4895a9c10ac5ff7e968e0f6133bac410a3"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/qs_instructions_history/qs_instructions_history.js",
+			"checksum": "2cbcc4ec1902c3714601767e6c7cbb29028dd626"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/qs_instructions_history/qs_instructions_history_controller.js",
+			"checksum": "10ebe55a334db0f13037cdfdbd84d9ee7d86b91f"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/insert/insert.html",
+			"checksum": "f4dd60949978d8a2705fdd2beb00fdf281895217"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/insert/insert.js",
+			"checksum": "ed0661fc4914b2076f781aab8fabf9d38e4d4023"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_pending/details/insert/insert_controller.js",
+			"checksum": "dda5c4d55d023890c238504dcd02c10b0eecf721"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/qs_instructions_closed.html",
+			"checksum": "1612c5f1fab7899f7a4ecdf5db613dcebd043c6a"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/qs_instructions_closed.js",
+			"checksum": "9e1cec36d6d9633e0800054d0ca261fcdd03d9f0"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/qs_instructions_closed_controller.js",
+			"checksum": "a8156c1bf7b9bff2e4a9d910672efa965b65cd04"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/update/update.html",
+			"checksum": "ef026919b0302359938ce0783167db2707091918"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/update/update.js",
+			"checksum": "ae4aa391402069d86e2f3e1dbb6d85de9d6bf54e"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/update/update_controller.js",
+			"checksum": "f4956ee8f8bc8cdc82feff487bdda225baac3a76"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/details/details.html",
+			"checksum": "f047445d82a74435560fbfb7b40c99a66f515b23"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/details/details.js",
+			"checksum": "adae63afbf2149447f6abd1e9ea7574d4ff51d00"
+		},
+		{
+			"path": "client/views/qs_instructions/qs_instructions_closed/details/details_controller.js",
+			"checksum": "674844f3875ef38151fa8b5c0b834acb5f105c5f"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions.html",
+			"checksum": "97cfd6156344d881882cc29c707c488a3615af1e"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions.js",
+			"checksum": "a33c26fa880fcfaf20fb502ac659aab19274df2e"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_controller.js",
+			"checksum": "004a2fe764c56f6016a5aef3eac15c28b7cd39a5"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/lawyer_instructions_pending.html",
+			"checksum": "3d12984e026c222f5e0e63c21d3a22b9e3eeb9b9"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/lawyer_instructions_pending.js",
+			"checksum": "5f619eef781efbf652b77fa8307c1a6752b515df"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/lawyer_instructions_pending_controller.js",
+			"checksum": "bbfd67d21e09e5b12cc26996033d9b42c9a7c3ce"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/insert/insert.html",
+			"checksum": "cc343941793584aeeae26f89db25c4c3994b2495"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/insert/insert.js",
+			"checksum": "aa32c51e438e9b993fbe5a05e9a9f44803539efa"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/insert/insert_controller.js",
+			"checksum": "6f8bf025a7c15b9f708e106328da3b01c72f04ac"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/update/update.html",
+			"checksum": "aab1d06c09d7c89aa71c558426fdc4909cc125e7"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/update/update.js",
+			"checksum": "77926307420fb3a3ebf65a111a6fbe014906fbbf"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/update/update_controller.js",
+			"checksum": "2fdbe001a88e14069d5da2aa327180c17bb3a478"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/details/details.html",
+			"checksum": "f003b95c893ea06d2de93076e4e231ea808f29e1"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/details/details.js",
+			"checksum": "1457bf5fa73df60b718f8130c6bf27dfd4d81e77"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_pending/details/details_controller.js",
+			"checksum": "516ee22c90a82147a57b1977085cd87429feb44a"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/lawyer_instructions_closed.html",
+			"checksum": "c04909b6c9ce31941c19656e7c09231235f130d5"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/lawyer_instructions_closed.js",
+			"checksum": "d4a74713f1725f1d46798a3c7819cb23954b8633"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/lawyer_instructions_closed_controller.js",
+			"checksum": "f184a185b1fabf4c61cc20970c2ef5b4faa3e76d"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/update/update.html",
+			"checksum": "63ecc8126f854281fc67b0bacf2a7ff65e58d3c6"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/update/update.js",
+			"checksum": "cbef1ad1721907da2f61197edafa1d6f9ef17060"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/update/update_controller.js",
+			"checksum": "966752e2d10617d3cc5ad43213a5c7814fb2b4ff"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/details/details.html",
+			"checksum": "1e3f16cc48cc831f9e14d57c1b686df4d5b0c24f"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/details/details.js",
+			"checksum": "9e7f805213914a56a9430efa60794b3b69d850ba"
+		},
+		{
+			"path": "client/views/lawyer_instructions/lawyer_instructions_closed/details/details_controller.js",
+			"checksum": "04c64773e9b271da5fa7011dab8e1fe9dd602d76"
+		},
+		{
+			"path": "client/views/sow/sow.html",
+			"checksum": "41549d166f4e9e26d15375ff6404cf13fa0fdc5e"
+		},
+		{
+			"path": "client/views/sow/sow.js",
+			"checksum": "9b4dc5b04372b52e895219e8a1a1322450276f9e"
+		},
+		{
+			"path": "client/views/sow/sow_controller.js",
+			"checksum": "b7289abade53a22938322759359d40bf6e608492"
+		},
+		{
+			"path": "client/views/sow/sow_pending/sow_pending.html",
+			"checksum": "1734cc233a9344e2c8a8acec81dcac71c9cf885c"
+		},
+		{
+			"path": "client/views/sow/sow_pending/sow_pending.js",
+			"checksum": "2aa1d26cceb96b0bf9a9e7cadafa7a2dda70c475"
+		},
+		{
+			"path": "client/views/sow/sow_pending/sow_pending_controller.js",
+			"checksum": "74325c33b44e224ca5e0e013a14bdcd5d5b1d209"
+		},
+		{
+			"path": "client/views/sow/sow_pending/insert/insert.html",
+			"checksum": "a14e3d2c585265c912ebd71174e726a9b25b832c"
+		},
+		{
+			"path": "client/views/sow/sow_pending/insert/insert.js",
+			"checksum": "221fc27cd3793ad493388f075bfc39bbc467679e"
+		},
+		{
+			"path": "client/views/sow/sow_pending/insert/insert_controller.js",
+			"checksum": "92ebadd63b8d9d144a3ed3db1452f623b8832966"
+		},
+		{
+			"path": "client/views/sow/sow_pending/update/update.html",
+			"checksum": "9c0b0cd8f09d68e5403ef8859369504d6cdd973e"
+		},
+		{
+			"path": "client/views/sow/sow_pending/update/update.js",
+			"checksum": "a69159a66267fe7cc60da32320da3a121b7e1370"
+		},
+		{
+			"path": "client/views/sow/sow_pending/update/update_controller.js",
+			"checksum": "1d25e3bb5f6532e4b948edc68d75f32ed4a03b07"
+		},
+		{
+			"path": "client/views/sow/sow_pending/details/details.html",
+			"checksum": "cabec25e90f5bb9e696a967dc7084a4f4ccb4134"
+		},
+		{
+			"path": "client/views/sow/sow_pending/details/details.js",
+			"checksum": "55d36470ce26014893c92b672791a323edb449f7"
+		},
+		{
+			"path": "client/views/sow/sow_pending/details/details_controller.js",
+			"checksum": "d775cdc9d694f647152cc20894f6cdecacb5271b"
+		},
+		{
+			"path": "client/views/sow/sow_closed/sow_closed.html",
+			"checksum": "b801aad345816a3a3a32e84d73ec5cdde9a6a8e4"
+		},
+		{
+			"path": "client/views/sow/sow_closed/sow_closed.js",
+			"checksum": "b45c6e27436a7d922fecb5549ba8b954b2ef0543"
+		},
+		{
+			"path": "client/views/sow/sow_closed/sow_closed_controller.js",
+			"checksum": "19de8172f2fe75e260b43f10d04edf477b0f89ff"
+		},
+		{
+			"path": "client/views/sow/sow_closed/update/update.html",
+			"checksum": "5845e9349d693ce7b1dd91b9ed38f7350c8d3906"
+		},
+		{
+			"path": "client/views/sow/sow_closed/update/update.js",
+			"checksum": "481b37b5f1c55e086c1ef3ac8aff8eb739087201"
+		},
+		{
+			"path": "client/views/sow/sow_closed/update/update_controller.js",
+			"checksum": "389b2fd5a4a0ae8110f4f82ff0314fac50d8563d"
+		},
+		{
+			"path": "client/views/sow/sow_closed/details/details.html",
+			"checksum": "7ac870ce6f794a07f9e9809ed17def36dbf9da50"
+		},
+		{
+			"path": "client/views/sow/sow_closed/details/details.js",
+			"checksum": "4717d117a82922d3bc04f671a6c57a1c038c0cb0"
+		},
+		{
+			"path": "client/views/sow/sow_closed/details/details_controller.js",
+			"checksum": "ac0832be49aea91ceeac4e2f040707e57f4c49ed"
+		},
+		{
+			"path": "client/views/banking_segments/banking_segments.html",
+			"checksum": "0ced912b7df8e302480ac154a83a4b1400b7bce1"
+		},
+		{
+			"path": "client/views/banking_segments/banking_segments.js",
+			"checksum": "ffed7738f56290841c7a25cc66d6f1f8e2a50e34"
+		},
+		{
+			"path": "client/views/banking_segments/banking_segments_controller.js",
+			"checksum": "9f7ea0afc7113eb9c3f62cdb6a6bc8deeffec8a6"
+		},
+		{
+			"path": "client/views/banking_segments/insert/insert.html",
+			"checksum": "8ae5c5c7ebf2f54005e50db3c8fa406497ef86aa"
+		},
+		{
+			"path": "client/views/banking_segments/insert/insert.js",
+			"checksum": "3412bb6382d10b8f60ae7f0907248f1612606801"
+		},
+		{
+			"path": "client/views/banking_segments/insert/insert_controller.js",
+			"checksum": "310dcadb6b5927993c089a7934a1276f54eecb9d"
+		},
+		{
+			"path": "client/views/banking_segments/update/update.html",
+			"checksum": "35ee3465c3ea6557eb3a892e2174e107f537fd32"
+		},
+		{
+			"path": "client/views/banking_segments/update/update.js",
+			"checksum": "03a13df8df2eec3309ecfcd5a8b33afbcd2faea2"
+		},
+		{
+			"path": "client/views/banking_segments/update/update_controller.js",
+			"checksum": "8de310a51792a8bede11953e03417b4e0cf4cad9"
+		},
+		{
+			"path": "client/views/banking_segments/details/details.html",
+			"checksum": "a69590ab3ae523983c66476a517424ec65fa2442"
+		},
+		{
+			"path": "client/views/banking_segments/details/details.js",
+			"checksum": "452e224c09d10228fb0cfb64792c8830c7cd7f52"
+		},
+		{
+			"path": "client/views/banking_segments/details/details_controller.js",
+			"checksum": "f61d5fa93dd4cfe1fd2ae9caf965269a1115bece"
+		},
+		{
+			"path": "client/views/covidlofs/covidlofs.html",
+			"checksum": "a419f865e1ef03a243cbf3ae0805a087539cb974"
+		},
+		{
+			"path": "client/views/covidlofs/covidlofs.js",
+			"checksum": "b6756427aaf4a1201b4a9baa96cdb0b253ec8e2e"
+		},
+		{
+			"path": "client/views/covidlofs/covidlofs_controller.js",
+			"checksum": "c378c9ca1d1d0f8e5206befdc4da679197fbcbcf"
+		},
+		{
+			"path": "client/views/covidlofs/insert/insert.html",
+			"checksum": "3309b230d7a7ee3de3381b0c88e9edbd56c57cea"
+		},
+		{
+			"path": "client/views/covidlofs/insert/insert.js",
+			"checksum": "a918c7528dfa8fb3d8426f2644b867839997787a"
+		},
+		{
+			"path": "client/views/covidlofs/insert/insert_controller.js",
+			"checksum": "d56537c9ce25ebb284c63eb047a26f8156c8237d"
+		},
+		{
+			"path": "client/views/covidlofs/update/update.html",
+			"checksum": "112a885923c8388086adcfe71d0d3b793d9e52c1"
+		},
+		{
+			"path": "client/views/covidlofs/update/update.js",
+			"checksum": "2e452df47d0b3021cf8e9c9cc440264468c44a48"
+		},
+		{
+			"path": "client/views/covidlofs/update/update_controller.js",
+			"checksum": "73eab08bcd308f7c5ad18e1be71108855bc71678"
+		},
+		{
+			"path": "client/views/covidlofs/details/details.html",
+			"checksum": "7da03bbce63634c81185249567d12ae3fe1ba414"
+		},
+		{
+			"path": "client/views/covidlofs/details/details.js",
+			"checksum": "57de95f1d2b68995ca7d41543c96ab0704c26481"
+		},
+		{
+			"path": "client/views/covidlofs/details/details_controller.js",
+			"checksum": "906f0ce8453503a9b8144df126a66fef361d3ee1"
+		},
+		{
+			"path": "both/collections/lawyers.js",
+			"checksum": "31402380f2c3d406d14ca8a65f914e0cfee118f3"
+		},
+		{
+			"path": "server/methods/lawyers.js",
+			"checksum": "e009648cbe24651e4616d29b70f3f40f4d0501b8"
+		},
+		{
+			"path": "server/collections/lawyers.js",
+			"checksum": "2cf7a38f2ad5188d193a05723ca35a29c898d404"
+		},
+		{
+			"path": "server/publish/lawyers.js",
+			"checksum": "da0ec7b09a0b95a46d62047e637fd5cecbb0e037"
+		},
+		{
+			"path": "both/collections/instructions.js",
+			"checksum": "b0fcd2626c44e2a25cff776e4b35fd8452c51562"
+		},
+		{
+			"path": "server/methods/instructions.js",
+			"checksum": "9d030be960f7598a9839cf3401e79bf6b4ec586d"
+		},
+		{
+			"path": "server/collections/instructions.js",
+			"checksum": "d8fc98386d7c6905be482ccb99b4227bb1fbcb5f"
+		},
+		{
+			"path": "server/publish/instructions.js",
+			"checksum": "088ecf3c133be5f92e6246350115d9771dfd6271"
+		},
+		{
+			"path": "both/collections/insurers.js",
+			"checksum": "261c1a04e27b8ce95b2f3e9e8c9d1d1b396348cb"
+		},
+		{
+			"path": "server/methods/insurers.js",
+			"checksum": "8ba45fca2f001c14d1538ea43253eec49ff5baf5"
+		},
+		{
+			"path": "server/collections/insurers.js",
+			"checksum": "4c84929934d6526f425c6d1ed546c69ced3f03eb"
+		},
+		{
+			"path": "server/publish/insurers.js",
+			"checksum": "580b2c303177b9d1900712d1743efdeffb8f13f7"
+		},
+		{
+			"path": "both/collections/deferrals.js",
+			"checksum": "ddca49d9ebf9cc69937e4446435e8d34a5fd4f40"
+		},
+		{
+			"path": "server/methods/deferrals.js",
+			"checksum": "d0f233a305046793e4d531b1f9e107a612c5c072"
+		},
+		{
+			"path": "server/collections/deferrals.js",
+			"checksum": "6efcfdfaf95fb6fb6071a5ceb85843e69fed0cba"
+		},
+		{
+			"path": "server/publish/deferrals.js",
+			"checksum": "e1e2166e279da713649466785d8ce82b853bfd3e"
+		},
+		{
+			"path": "both/collections/valuers.js",
+			"checksum": "9257f9aca968ba08d8f54d309473340c9193c535"
+		},
+		{
+			"path": "server/methods/valuers.js",
+			"checksum": "6f5c5f65edcead01b5402746939a2f17eeb08e9c"
+		},
+		{
+			"path": "server/collections/valuers.js",
+			"checksum": "106e145b1cf006be51351eb488b510608821124c"
+		},
+		{
+			"path": "server/publish/valuers.js",
+			"checksum": "6bbb918ee53f7c7d2a05228783372c38153675f3"
+		},
+		{
+			"path": "both/collections/valuer_instructions.js",
+			"checksum": "6266d41d360e52aed9ecbe22d9eb0e734e88f755"
+		},
+		{
+			"path": "server/methods/valuer_instructions.js",
+			"checksum": "556ebd4f2c6d7b14e06ad48eb6e85dea7728a1e0"
+		},
+		{
+			"path": "server/collections/valuer_instructions.js",
+			"checksum": "a769175940944c103361c9c57bce7b2b5a99d215"
+		},
+		{
+			"path": "server/publish/valuer_instructions.js",
+			"checksum": "5c6b5958b8e051e25339539a4f20de54214a0354"
+		},
+		{
+			"path": "both/collections/audit_confirmations.js",
+			"checksum": "5ba2649e3b4c7a00fedb9a056c8cf93768d27577"
+		},
+		{
+			"path": "server/methods/audit_confirmations.js",
+			"checksum": "9ad500cb5772ee205bc3194f4a9b8b52343028ef"
+		},
+		{
+			"path": "server/collections/audit_confirmations.js",
+			"checksum": "0a985399efa1f8d26b81d2bc41b0bddfc84e46c2"
+		},
+		{
+			"path": "server/publish/audit_confirmations.js",
+			"checksum": "8b5da861489d7b33e634b6e56150cb11e22d0c97"
+		},
+		{
+			"path": "both/collections/complaints.js",
+			"checksum": "6df68bbf8209f011825655f5749e594d253a0afe"
+		},
+		{
+			"path": "server/methods/complaints.js",
+			"checksum": "759146933d624c55c6a64ca7a6445d038a854d5e"
+		},
+		{
+			"path": "server/collections/complaints.js",
+			"checksum": "b15fd9aad82b1692307bf78f8b688fa759c7af3b"
+		},
+		{
+			"path": "server/publish/complaints.js",
+			"checksum": "dc5d61f2956bc4c0964aef8362e872f19b283c32"
+		},
+		{
+			"path": "both/collections/brds.js",
+			"checksum": "0eaff680de18c8041f3070545102169abe5b6a64"
+		},
+		{
+			"path": "server/methods/brds.js",
+			"checksum": "92db5eed8712657c5caf4a8df629bef2710544a6"
+		},
+		{
+			"path": "server/collections/brds.js",
+			"checksum": "d2ea5ae2d7ecbb37f72d1e8cc97be12c8f537667"
+		},
+		{
+			"path": "server/publish/brds.js",
+			"checksum": "8756e0b848c38b0e688b076d7e76bec77b4883c2"
+		},
+		{
+			"path": "both/collections/branches.js",
+			"checksum": "59729f9f2d76270f662d3247a8b68be4b1a3ab7a"
+		},
+		{
+			"path": "server/methods/branches.js",
+			"checksum": "14d83867db8e6ec82182cf0d1d335283c34e230f"
+		},
+		{
+			"path": "server/collections/branches.js",
+			"checksum": "b83b918634fb2ea971400aadd7f947b371c9d69a"
+		},
+		{
+			"path": "server/publish/branches.js",
+			"checksum": "db709ccd818b38113523bf536842ff31344c4554"
+		},
+		{
+			"path": "both/collections/branch_facilities.js",
+			"checksum": "bdbb7e69f89694528ca8ac1681fa54b458e8f8b2"
+		},
+		{
+			"path": "server/methods/branch_facilities.js",
+			"checksum": "1591b74b2f83b1360b290b0ddf3d05a7c8273927"
+		},
+		{
+			"path": "server/collections/branch_facilities.js",
+			"checksum": "f5089137a4b1b516b82b361172de1b49d3d8c34a"
+		},
+		{
+			"path": "server/publish/branch_facilities.js",
+			"checksum": "64b8bbb4fb077229ab6dce43e15ad22d7064e127"
+		},
+		{
+			"path": "both/collections/qs.js",
+			"checksum": "50f8405bbcd10e7c7ddd3ada89060e14c2558174"
+		},
+		{
+			"path": "server/methods/qs.js",
+			"checksum": "d6c4a15851e0b3c17cf869898244d3554fedf7d9"
+		},
+		{
+			"path": "server/collections/qs.js",
+			"checksum": "c34710af56578b6db1e761d80a667189465323c6"
+		},
+		{
+			"path": "server/publish/qs.js",
+			"checksum": "e892f6cd1bd13cf7e126b9d2831b9b8f4cd794f5"
+		},
+		{
+			"path": "both/collections/qs_instructions.js",
+			"checksum": "ed3a83d2c15b365c20e0f3efc6e719947239c869"
+		},
+		{
+			"path": "server/methods/qs_instructions.js",
+			"checksum": "8047a03dc788327a2595fb19eba8fe610ef0a39d"
+		},
+		{
+			"path": "server/collections/qs_instructions.js",
+			"checksum": "ff376d01ed4ccc49ecba201283ad0c4f0b5dfcfe"
+		},
+		{
+			"path": "server/publish/qs_instructions.js",
+			"checksum": "3f2e1ff57de5651d30764cdf6c767a3da9d22e01"
+		},
+		{
+			"path": "both/collections/qs_instructions_history.js",
+			"checksum": "332ed6109f2d6c02327e6598e0abaa12efbe7e05"
+		},
+		{
+			"path": "server/methods/qs_instructions_history.js",
+			"checksum": "3c9f578cdd962645dae6e8d5f4d9bb5d705010ce"
+		},
+		{
+			"path": "server/collections/qs_instructions_history.js",
+			"checksum": "f1899c87e4080418a7654459387a6ebc0eba6267"
+		},
+		{
+			"path": "server/publish/qs_instructions_history.js",
+			"checksum": "64eda4a7f6a2be266db21a04bf99c109ad894bfb"
+		},
+		{
+			"path": "both/collections/sow.js",
+			"checksum": "581c2f70109d19e4da28b1e581549479b0627522"
+		},
+		{
+			"path": "server/methods/sow.js",
+			"checksum": "6a5e2e7993462aaf66ed09722b41dc13de906d2b"
+		},
+		{
+			"path": "server/collections/sow.js",
+			"checksum": "987ac99069909c15e3588f55c46b2cabb5fd0d50"
+		},
+		{
+			"path": "server/publish/sow.js",
+			"checksum": "235d463dad43cc8610881ceeaf3d7442a80eac9d"
+		},
+		{
+			"path": "both/collections/banking_segment.js",
+			"checksum": "b0f7ea2a3a0fc30ede61130e93a463ec70eefd6e"
+		},
+		{
+			"path": "server/methods/banking_segment.js",
+			"checksum": "bf717e5e515f0d446953030b9cf9e9844b271da6"
+		},
+		{
+			"path": "server/collections/banking_segment.js",
+			"checksum": "9ac38a2436bec4497aa853fcbb1481803865071f"
+		},
+		{
+			"path": "server/publish/banking_segment.js",
+			"checksum": "b107b0c33d23ae42d16f707b1cc522977d4c0ec7"
+		},
+		{
+			"path": "both/collections/covidlofs.js",
+			"checksum": "9024cf74bacebc23e178ed90c8e0f5d7b87b6271"
+		},
+		{
+			"path": "server/methods/covidlofs.js",
+			"checksum": "86edb7816e7cfe530e5e834a7a8623d03aeb2d70"
+		},
+		{
+			"path": "server/collections/covidlofs.js",
+			"checksum": "4db2db6089663040c566e210af23caceae35cadf"
+		},
+		{
+			"path": "server/publish/covidlofs.js",
+			"checksum": "56eaa86a6e22e5e76069e8586a62307294c629aa"
+		},
+		{
+			"path": "both/joins/joins.js",
+			"checksum": "7f108925092c29f5ac2c93be965ab2170d583947"
+		},
+		{
+			"path": "server/methods/update_qs_instruction_history.js",
+			"checksum": "1836f8644149c68e423136072c09e6ae269de670"
+		},
+		{
+			"path": "lib/string_utils.js",
+			"checksum": "6bf8f64bf32bd7aff71cbeeba23df9fb8282a12c"
+		},
+		{
+			"path": "lib/case_utils.js",
+			"checksum": "552ee22b40c83544230a1132b3ee8e875270ec2a"
+		},
+		{
+			"path": "lib/object_utils.js",
+			"checksum": "c38a96268fd5b24afe76bf9976f62292798308c0"
+		},
+		{
+			"path": "lib/date_utils.js",
+			"checksum": "87ed4560414836020a5c3e45839200f355c1b649"
+		},
+		{
+			"path": "lib/database_utils.js",
+			"checksum": "144794067567b3eac48752c4fb2a81a0d6273800"
+		},
+		{
+			"path": "lib/adjacency_list_utils.js",
+			"checksum": "797a04eabb2d7b9ab471944ff7e03be96291123b"
+		},
+		{
+			"path": "lib/api_utils.js",
+			"checksum": "2f3f9977bffc90c22922059b80bf3650cc98a358"
+		},
+		{
+			"path": "client/lib/http_utils.js",
+			"checksum": "740095219b687a460a789da9ab9ef4d64a111b9c"
+		},
+		{
+			"path": "client/lib/router_utils.js",
+			"checksum": "0d46da090113fb0a55b452c6ff65dfef7a9d28d5"
+		},
+		{
+			"path": "client/components/confirmation_dialog/confirmation_dialog.html",
+			"checksum": "27a5db15d1de639e2b1a2a480f136332084d2c5b"
+		},
+		{
+			"path": "client/components/confirmation_dialog/confirmation_dialog.js",
+			"checksum": "7ab46ff82b06a36fc2bdbe30e7bd164b660dfc1b"
+		},
+		{
+			"path": "client/components/input_dialog/input_dialog.html",
+			"checksum": "4717e6ebb273c655f5f6d5c133a5814f5deee6c1"
+		},
+		{
+			"path": "client/components/input_dialog/input_dialog.js",
+			"checksum": "62dce4c81f8955ca99e429737ae41eb8416bf632"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/js/bootstrap.js",
+			"checksum": "3b965a36a6b08854ad6eddedf85c5319fd392b4a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/less/custom.import.less",
+			"checksum": "875909dfd0477ec6714b79cbec176e943405a186"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/less/bootstrap.import.less",
+			"checksum": "124360ed236fa8144e1387b6910ef081c4611347"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/less/bootstrap.mixins.import.less",
+			"checksum": "b53332a4c7dffc57aefda1db82b4e09258dad07a"
+		},
+		{
+			"path": "public/fonts/glyphicons-halflings-regular.svg",
+			"checksum": "de51a8494180a6db074af2dee2383f0a363c5b08"
+		},
+		{
+			"path": "public/fonts/glyphicons-halflings-regular.woff",
+			"checksum": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f"
+		},
+		{
+			"path": "public/fonts/glyphicons-halflings-regular.ttf",
+			"checksum": "44bc1850f570972267b169ae18f1cb06b611ffa2"
+		},
+		{
+			"path": "public/fonts/glyphicons-halflings-regular.eot",
+			"checksum": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3"
+		},
+		{
+			"path": "public/fonts/glyphicons-halflings-regular.woff2",
+			"checksum": "ca35b697d99cae4d1b60f2d60fcd37771987eb07"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/bootstrap-tagsinput.js",
+			"checksum": "6f25a97cb1bb9b8edcf0cb297eabfc9f94f1a80d"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/bootstrap-tagsinput.css",
+			"checksum": "49937990ee001ae632d23d1e9bb71dc4460ac7c1"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_LANG.js",
+			"checksum": "e80901eda8d09ee66e3375ddd6d7f7a53dbfcda8"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_cz.js",
+			"checksum": "146a2a2bd0e89b62b775eee929907970e875ddf6"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput.js",
+			"checksum": "b6c83cb478c232284b8b6cae90d0ec2840d93332"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_tr.js",
+			"checksum": "25e2ea3f23c594180a3496f814ae907343de1add"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_sk.js",
+			"checksum": "1dc9d65243156006cf762ed85cdf36501c27f38a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pl.js",
+			"checksum": "77ce969c9532dc4cda50d57bad7c8e8c9e792386"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_ro.js",
+			"checksum": "7fcbd870c67fbd4646b6b53c4e07f84ebaf6ebd1"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_ru.js",
+			"checksum": "4939e4b72d235b9a68602aba3501bd72bde77611"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pt-BR.js",
+			"checksum": "8caeab2c4b40a90eba4412eb5a31c76405e5a04a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_uk.js",
+			"checksum": "f5f6b5052a111fa87a5da8608a5d137d4116e6c5"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput.css",
+			"checksum": "30ba45c948bcb125cf0cb550b4a9d2f13ffcc710"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_nl.js",
+			"checksum": "106dfa775832df6830675c8927603a813063986c"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_el.js",
+			"checksum": "d00eebe17389c41dbdfdd5611573ba52169f16eb"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_hu.js",
+			"checksum": "500bfd774110b73e07e9f4e23a4cbf9c896fbcea"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_it.js",
+			"checksum": "09d41c11dadf15f197bd443f5ad01a68e3408bde"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_zh.js",
+			"checksum": "f477aede4974871fc0ba71d3ed4f90d8b9f1a74e"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pt.js",
+			"checksum": "f1d3b0c83a6a10b6e1cd7b8f523a98a7a51720ac"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_th.js",
+			"checksum": "05fec04f2b334bd579126eeb54321fbec516470f"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_de.js",
+			"checksum": "fcad7c9406cb7ab1959ee5a62825a62b905f34a2"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_sr.js",
+			"checksum": "50ac58590814ab9959e34d94a4b2bb8cf9be35b9"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_fr.js",
+			"checksum": "aea834881f99fe187153560b32011c2af7f56092"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_es.js",
+			"checksum": "6eb5775359ee3e6199962d05fb6a2ddf79426766"
+		},
+		{
+			"path": "client/lib/form_utils.js",
+			"checksum": "56e09ae4e997201875b47316576beb1e3d2d63b2"
+		},
+		{
+			"path": "settings.json",
+			"checksum": "26761ca46cca5ce08f47665f51e023fd685901f9"
+		}
+	],
+	"output_directories": [
+		"both/",
+		"both/collections/",
+		"both/joins/",
+		"both/lib/",
+		"client/",
+		"client/components/",
+		"client/components/confirmation_dialog/",
+		"client/components/input_dialog/",
+		"client/lib/",
+		"client/lib/globals/",
+		"client/styles/",
+		"client/styles/framework/",
+		"client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/",
+		"client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/",
+		"client/styles/framework/bootstrap3/js/",
+		"client/styles/framework/bootstrap3/less/",
+		"client/styles/styles/",
+		"client/styles/styles/theme/",
+		"client/views/",
+		"client/views/admin/",
+		"client/views/admin/users/",
+		"client/views/admin/users/details/",
+		"client/views/admin/users/edit/",
+		"client/views/admin/users/insert/",
+		"client/views/audit_confirmations/",
+		"client/views/audit_confirmations/audit_confirmations_closed/",
+		"client/views/audit_confirmations/audit_confirmations_closed/details/",
+		"client/views/audit_confirmations/audit_confirmations_closed/edit/",
+		"client/views/audit_confirmations/audit_confirmations_pending/",
+		"client/views/audit_confirmations/audit_confirmations_pending/details/",
+		"client/views/audit_confirmations/audit_confirmations_pending/edit/",
+		"client/views/audit_confirmations/audit_confirmations_pending/insert/",
+		"client/views/banking_segments/",
+		"client/views/banking_segments/details/",
+		"client/views/banking_segments/insert/",
+		"client/views/banking_segments/update/",
+		"client/views/branch_facilities/",
+		"client/views/branch_facilities/all_branch_facilities/",
+		"client/views/branch_facilities/all_branch_facilities/details/",
+		"client/views/branch_facilities/loo_pending/",
+		"client/views/branch_facilities/loo_pending/details/",
+		"client/views/branch_facilities/loo_pending/insert/",
+		"client/views/branch_facilities/loo_pending/update/",
+		"client/views/branch_facilities/loo_received/",
+		"client/views/branch_facilities/loo_received/details/",
+		"client/views/branch_facilities/loo_received/insert/",
+		"client/views/branch_facilities/loo_received/update/",
+		"client/views/branches/",
+		"client/views/branches/details/",
+		"client/views/branches/insert/",
+		"client/views/branches/update/",
+		"client/views/brds/",
+		"client/views/brds/brds_closed/",
+		"client/views/brds/brds_closed/details/",
+		"client/views/brds/brds_closed/edit/",
+		"client/views/brds/brds_pending/",
+		"client/views/brds/brds_pending/details/",
+		"client/views/brds/brds_pending/edit/",
+		"client/views/brds/brds_pending/insert/",
+		"client/views/complaints/",
+		"client/views/complaints/complaints_closed/",
+		"client/views/complaints/complaints_closed/details/",
+		"client/views/complaints/complaints_closed/edit/",
+		"client/views/complaints/complaints_pending/",
+		"client/views/complaints/complaints_pending/details/",
+		"client/views/complaints/complaints_pending/edit/",
+		"client/views/complaints/complaints_pending/insert/",
+		"client/views/covidlofs/",
+		"client/views/covidlofs/details/",
+		"client/views/covidlofs/insert/",
+		"client/views/covidlofs/update/",
+		"client/views/deferrals/",
+		"client/views/deferrals/closed_deferrals/",
+		"client/views/deferrals/closed_deferrals/details/",
+		"client/views/deferrals/closed_deferrals/edit/",
+		"client/views/deferrals/pending_deferrals/",
+		"client/views/deferrals/pending_deferrals/details/",
+		"client/views/deferrals/pending_deferrals/edit/",
+		"client/views/deferrals/pending_deferrals/insert/",
+		"client/views/forgot_password/",
+		"client/views/home_private/",
+		"client/views/home_private/instructions_all/",
+		"client/views/home_private/instructions_complete/",
+		"client/views/home_private/instructions_incomplete/",
+		"client/views/home_private/instructions_incomplete/details/",
+		"client/views/home_private/instructions_incomplete/edit/",
+		"client/views/home_private/instructions_incomplete/insert/",
+		"client/views/home_private/lawyers_in_panel/",
+		"client/views/home_private/pending_instructions_with_undertakings/",
+		"client/views/home_public/",
+		"client/views/instructions/",
+		"client/views/instructions/details/",
+		"client/views/instructions/edit/",
+		"client/views/instructions/insert/",
+		"client/views/insurers/",
+		"client/views/insurers/details/",
+		"client/views/insurers/edit/",
+		"client/views/insurers/insert/",
+		"client/views/lawyer_instructions/",
+		"client/views/lawyer_instructions/lawyer_instructions_closed/",
+		"client/views/lawyer_instructions/lawyer_instructions_closed/details/",
+		"client/views/lawyer_instructions/lawyer_instructions_closed/update/",
+		"client/views/lawyer_instructions/lawyer_instructions_pending/",
+		"client/views/lawyer_instructions/lawyer_instructions_pending/details/",
+		"client/views/lawyer_instructions/lawyer_instructions_pending/insert/",
+		"client/views/lawyer_instructions/lawyer_instructions_pending/update/",
+		"client/views/layout/",
+		"client/views/laywers/",
+		"client/views/laywers/details/",
+		"client/views/laywers/edit/",
+		"client/views/laywers/insert/",
+		"client/views/loading/",
+		"client/views/login/",
+		"client/views/logout/",
+		"client/views/not_found/",
+		"client/views/qs/",
+		"client/views/qs/details/",
+		"client/views/qs/insert/",
+		"client/views/qs/update/",
+		"client/views/qs_instructions/",
+		"client/views/qs_instructions/qs_instructions_closed/",
+		"client/views/qs_instructions/qs_instructions_closed/details/",
+		"client/views/qs_instructions/qs_instructions_closed/update/",
+		"client/views/qs_instructions/qs_instructions_pending/",
+		"client/views/qs_instructions/qs_instructions_pending/details/",
+		"client/views/qs_instructions/qs_instructions_pending/details/insert/",
+		"client/views/qs_instructions/qs_instructions_pending/details/qs_instructions_history/",
+		"client/views/qs_instructions/qs_instructions_pending/insert/",
+		"client/views/qs_instructions/qs_instructions_pending/update/",
+		"client/views/register/",
+		"client/views/reset_password/",
+		"client/views/sow/",
+		"client/views/sow/sow_closed/",
+		"client/views/sow/sow_closed/details/",
+		"client/views/sow/sow_closed/update/",
+		"client/views/sow/sow_pending/",
+		"client/views/sow/sow_pending/details/",
+		"client/views/sow/sow_pending/insert/",
+		"client/views/sow/sow_pending/update/",
+		"client/views/user_settings/",
+		"client/views/user_settings/change_pass/",
+		"client/views/user_settings/profile/",
+		"client/views/valuer_instructions/",
+		"client/views/valuer_instructions/valuer_instructions_closed/",
+		"client/views/valuer_instructions/valuer_instructions_closed/details/",
+		"client/views/valuer_instructions/valuer_instructions_closed/update/",
+		"client/views/valuer_instructions/valuer_instructions_pending/",
+		"client/views/valuer_instructions/valuer_instructions_pending/details/",
+		"client/views/valuer_instructions/valuer_instructions_pending/insert/",
+		"client/views/valuer_instructions/valuer_instructions_pending/update/",
+		"client/views/valuers/",
+		"client/views/valuers/details/",
+		"client/views/valuers/edit/",
+		"client/views/valuers/insert/",
+		"client/views/verify_email/",
+		"imports/",
+		"lib/",
+		"packages/",
+		"private/",
+		"public/",
+		"public/fonts/",
+		"public/images/",
+		"server/",
+		"server/collections/",
+		"server/controllers/",
+		"server/lib/",
+		"server/methods/",
+		"server/publish/"
+	],
+	"packages": {
+		"meteor": [
+			"accounts-password",
+			"perak:joins",
+			"tmeasday:publish-counts",
+			"blaze-html-templates",
+			"accounts-base",
+			"http",
+			"email",
+			"spiderable",
+			"ejson",
+			"random",
+			"session",
+			"underscore",
+			"momentjs:moment",
+			"iron:router",
+			"fortawesome:fontawesome",
+			"matb33:collection-hooks",
+			"perak:user-roles",
+			"copleykj:livestamp",
+			"less",
+			"reactive-dict",
+			"mizzao:bootboxjs",
+			"perak:markdown",
+			"rajit:bootstrap3-datepicker"
+		],
+		"npm": [
+			"bcrypt"
+		],
+		"mrt": [
+		]
+	}
+}

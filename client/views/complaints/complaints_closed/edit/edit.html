@@ -1,0 +1,184 @@
+<template name="ComplaintsComplaintsClosedEdit">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<h2 id="page_title" class="pull-left">
+					Edit Complaint
+				</h2>
+			</div>
+		</div>
+		{{> ComplaintsComplaintsClosedEditEditForm}}
+	</div>
+</template>
+
+<template name="ComplaintsComplaintsClosedEditEditForm">
+	<div id="complaints-complaints-closed-edit-edit-form" class="">
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-complaint_date">
+				<label for="complaint_date">
+					Date of Complaint
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="complaint_date" value="{{formatDate complaint.complaint_date 'DD/MM/YYYY'}}" class="form-control " autofocus="autofocus" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-unit">
+				<label for="unit">
+					Credit Ops Unit
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="unit" data-type="array" required="required">
+						<option value="Credit Ops - Credit Admin" {{optionIsSelected complaint.unit "Credit Ops - Credit Admin"}}>							Credit Ops - Credit Admin</option>
+						<option value="Credit Ops - Disbursement" {{optionIsSelected complaint.unit "Credit Ops - Disbursement"}}>							Credit Ops - Disbursement</option>
+						<option value="Credit Ops - Documentation" {{optionIsSelected complaint.unit "Credit Ops - Documentation"}}>							Credit Ops - Documentation</option>
+						<option value="Credit Ops - Securities" {{optionIsSelected complaint.unit "Credit Ops - Securities"}}>							Credit Ops - Securities</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-staff_name">
+				<label for="staff_name">
+					Name of Staff
+				</label>
+				<div class="input-div">
+					<input type="text" name="staff_name" value="{{complaint.staff_name}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-complainant">
+				<label for="complainant">
+					Name of Complainant
+				</label>
+				<div class="input-div">
+					<input type="text" name="complainant" value="{{complaint.complainant}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-is_staff">
+				<label for="is_staff">
+					Complainant is Staff
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="is_staff" data-type="array">
+						<option value="yes" {{optionIsSelected complaint.is_staff "yes"}}>							Yes</option>
+						<option value="no" {{optionIsSelected complaint.is_staff "no"}}>							No</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-complainant_contact">
+				<label for="complainant_contact">
+					Contact of Complainant
+				</label>
+				<div class="input-div">
+					<input type="text" name="complainant_contact" value="{{complaint.complainant_contact}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-complaint_description">
+				<label for="complaint_description">
+					Brief Description of Complaint
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="complaint_description">{{complaint.complaint_description}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-how_resolved">
+				<label for="how_resolved">
+					Resolution/ Update
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="how_resolved">{{complaint.how_resolved}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="status" data-type="string">
+						<option value="Pending" {{optionIsSelected complaint.status "Pending"}}>							Pending</option>
+						<option value="Closed" {{optionIsSelected complaint.status "Closed"}}>							Closed</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_closed" value="{{formatDate complaint.date_closed 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

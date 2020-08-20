@@ -1,0 +1,189 @@
+<template name="QsInstructionsQsInstructionsPendingInsert">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> QsInstructionsQsInstructionsPendingInsertForm}}
+	</div>
+</template>
+
+<template name="QsInstructionsQsInstructionsPendingInsertForm">
+	<div id="qs-instructions-qs-instructions-pending-insert-form" class="">
+		<h2 id="component-title">
+			New QS Instruction
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-date">
+				<label for="date">
+					Date
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date" value="{{formatDate 'today' 'DD/MM/YYYY'}}" class="form-control " autofocus="autofocus" required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-reference">
+				<label for="reference">
+					Reference
+				</label>
+				<div class="input-div">
+					<input type="text" name="reference" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-qs-id">
+				<label for="qsId">
+					QS
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="qsId" data-type="string" required="required">
+						{{#each qs_list}}
+						<option value="{{_id}}">							{{name}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<input type="text" name="borrower" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-currency">
+				<label for="currency">
+					Currency
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="currency" data-type="string">
+						<option value="KES" selected>							KES</option>
+						<option value="USD">							USD</option>
+						<option value="EUR">							EUR</option>
+						<option value="GBP">							GBP</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount">
+				<label for="amount">
+					Amount
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount" value="" class="form-control " required="required" data-type="float">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-plot_details">
+				<label for="Plot_Details">
+					Plot Details
+				</label>
+				<div class="input-div">
+					<input type="text" name="Plot_Details" value="" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					RM
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-action_pending_with">
+				<label for="action_pending_with">
+					Action Pending With
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="action_pending_with" data-type="string" required="required">
+						<option value="QS" selected>							QS</option>
+						<option value="Customer">							Customer</option>
+						<option value="RM">							RM</option>
+						<option value="Credit Ops ">							Credit Ops</option>
+						<option value="Closed">							Closed</option>
+						<option value="Cancelled">							Cancelled</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_closed" value="" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

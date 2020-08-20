@@ -1,0 +1,152 @@
+<template name="SowSowClosedDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> SowSowClosedDetailsForm}}
+	</div>
+</template>
+
+<template name="SowSowClosedDetailsForm">
+	<div id="sow-sow-closed-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Sow Closed Details
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-loo_date">
+				<label for="loo_date">
+					LOO Date
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-loo_date">
+						{{formatDate sow_closed.loo_date 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-borrower">
+						{{sow_closed.borrower}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-amount">
+				<label for="amount">
+					Amount
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-amount">
+						{{sow_closed.amount}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-sow_deadline">
+				<label for="sow_deadline">
+					SOW Deadline
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-sow_deadline">
+						{{formatDate sow_closed.sow_deadline 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-status">
+						{{sow_closed.status}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date_closed">
+						{{formatDate sow_closed.date_closed 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-penalty_af_collected">
+				<label for="penalty_af_collected">
+					Penalty AF Collected?
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-penalty_af_collected">
+						{{sow_closed.penalty_af_collected}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-af_collected">
+				<label for="af_collected">
+					AF Collected
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-af_collected">
+						{{sow_closed.af_collected}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date_af_collected">
+				<label for="date_af_collected">
+					Date AF Collected
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date_af_collected">
+						{{formatDate sow_closed.date_af_collected 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					RM
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-rm">
+						{{sow_closed.rm}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-credit_risk_email">
+				<label for="credit_risk_email">
+					Credit Risk Email
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-credit_risk_email">
+						{{sow_closed.credit_risk_email}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

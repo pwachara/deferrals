@@ -1,0 +1,212 @@
+<template name="BranchFacilitiesLooPendingUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> BranchFacilitiesLooPendingUpdateForm}}
+	</div>
+</template>
+
+<template name="BranchFacilitiesLooPendingUpdateForm">
+	<div id="branch-facilities-loo-pending-update-form" class="">
+		<h2 id="component-title">
+			Edit LOO Pending
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-date">
+				<label for="date">
+					Date
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date" value="{{formatDate loo_pending1.date 'DD/MM/YYYY'}}" class="form-control " autofocus="autofocus" required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-reference">
+				<label for="reference">
+					Reference
+				</label>
+				<div class="input-div">
+					<input type="text" name="reference" value="{{loo_pending1.reference}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<input type="text" name="borrower" value="{{loo_pending1.borrower}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-facility_type">
+				<label for="facility_type">
+					Facility Type
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="facility_type" data-type="string">
+						<option value="Loan" {{optionIsSelected loo_pending1.facility_type "Loan"}}>							Loan</option>
+						<option value="Overdraft" {{optionIsSelected loo_pending1.facility_type "Overdraft"}}>							Overdraft</option>
+						<option value="Contingent Liability" {{optionIsSelected loo_pending1.facility_type "Contingent Liability"}}>							Contingent Liability</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-currency">
+				<label for="currency">
+					Currency
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="currency" data-type="string">
+						<option value="KES" {{optionIsSelected loo_pending1.currency "KES"}}>							KES</option>
+						<option value="USD" {{optionIsSelected loo_pending1.currency "USD"}}>							USD</option>
+						<option value="EUR" {{optionIsSelected loo_pending1.currency "EUR"}}>							EUR</option>
+						<option value="GBP" {{optionIsSelected loo_pending1.currency "GBP"}}>							GBP</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount">
+				<label for="amount">
+					Amount
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount" value="{{loo_pending1.amount}}" class="form-control " required="required" data-type="float">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-branch-id">
+				<label for="branchId">
+					Branch
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="branchId" data-type="string" required="required">
+						{{#each branch_list}}
+						<option value="{{_id}}" {{optionIsSelected ../loo_pending1.branchId _id}}>							{{name}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-loo_received">
+				<div class="input-div">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{loo_pending1.loo_received}}" name="loo_received" data-type="bool" {{itemIsChecked loo_pending1.loo_received true}}>
+							LOO Received?
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_loo_received">
+				<label for="date_loo_received">
+					Date LOO Received
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_loo_received" value="{{formatDate loo_pending1.date_loo_received 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					Relationship Manager
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm" value="{{loo_pending1.rm}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm_email">
+				<label for="rm_email">
+					RM Email
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm_email" value="{{loo_pending1.rm_email}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-bm_email">
+				<label for="bm_email">
+					BM Email
+				</label>
+				<div class="input-div">
+					<input type="text" name="bm_email" value="{{loo_pending1.bm_email}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

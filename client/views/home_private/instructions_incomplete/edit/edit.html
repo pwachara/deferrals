@@ -1,0 +1,384 @@
+<template name="HomePrivateInstructionsIncompleteEdit">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<h2 id="page_title" class="pull-left">
+					<a href="#" id="page-back-button" class="btn btn-default" title="back">
+						<span class="fa fa-chevron-left">
+						</span>
+					</a>
+					Edit Instruction
+				</h2>
+			</div>
+		</div>
+		{{> HomePrivateInstructionsIncompleteEditEditForm}}
+	</div>
+</template>
+
+<template name="HomePrivateInstructionsIncompleteEditEditForm">
+	<div id="home-private-instructions-incomplete-edit-edit-form" class="">
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-bank_ref">
+				<label for="bank_ref">
+					Bank Reference
+				</label>
+				<div class="input-div">
+					<input type="text" name="bank_ref" value="{{instruction.bank_ref}}" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date">
+				<label for="date">
+					Date of Instruction
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date" value="{{formatDate instruction.date 'DD-MM-YYYY'}}" class="form-control " required="required" data-type="date" data-format="DD-MM-YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-lawyer-id">
+				<label for="lawyerId">
+					Lawyer
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="lawyerId" data-type="string" required="required">
+						{{#each lawyers}}
+						<option value="{{_id}}" {{optionIsSelected ../instruction.lawyerId _id}}>							{{name}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<input type="text" name="borrower" value="{{instruction.borrower}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-banking_segment-id">
+				<label for="banking_segmentId">
+					Banking Segment
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="banking_segmentId" data-type="string" required="required">
+						{{#each banking_segment_list}}
+						<option value="{{_id}}" {{optionIsSelected ../instruction.banking_segmentId _id}}>							{{name}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-collateral">
+				<label for="collateral">
+					Collateral Details
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="collateral">{{instruction.collateral}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-currencies">
+				<label for="currencies">
+					Currencies Used
+				</label>
+				<div class="input-div">
+					<input type="text" name="currencies" value="{{instruction.currencies}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-transaction_type">
+				<label for="transaction_type">
+					Nature of Transaction
+				</label>
+				<div class="input-div">
+					<input type="text" name="transaction_type" value="{{instruction.transaction_type}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount">
+				<label for="amount">
+					Amount of Charge
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount" value="{{instruction.amount}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-update">
+				<label for="update">
+					Latest Update
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="update">{{instruction.update}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-update_date">
+				<label for="update_date">
+					Date of Update
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="update_date" value="{{formatDate instruction.update_date 'DD-MM-YYYY'}}" class="form-control " data-type="date" data-format="DD-MM-YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-action_pending_with">
+				<label for="action_pending_with">
+					Action Pending With
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="action_pending_with" data-type="array" required="required">
+						<option value="Bank Credit Ops" {{optionIsSelected instruction.action_pending_with "Bank Credit Ops"}}>							Bank Credit Ops</option>
+						<option value="Bank Legal" {{optionIsSelected instruction.action_pending_with "Bank Legal"}}>							Bank Legal</option>
+						<option value="Banks Lawyer" {{optionIsSelected instruction.action_pending_with "Banks Lawyer"}}>							Banks Lawyer</option>
+						<option value="Bank RM" {{optionIsSelected instruction.action_pending_with "Bank RM"}}>							Bank RM</option>
+						<option value="Closed" {{optionIsSelected instruction.action_pending_with "Closed"}}>							Closed</option>
+						<option value="Customer" {{optionIsSelected instruction.action_pending_with "Customer"}}>							Customer</option>
+						<option value="External Lawyer" {{optionIsSelected instruction.action_pending_with "External Lawyer"}}>							External Lawyer</option>
+						<option value="Valuer" {{optionIsSelected instruction.action_pending_with "Valuer"}}>							Valuer</option>
+						<option value="Cancelled" {{optionIsSelected instruction.action_pending_with "Cancelled"}}>							Cancelled</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_completed">
+				<label for="date_completed">
+					Date Completed
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_completed" value="{{formatDate instruction.date_completed 'DD-MM-YYYY'}}" class="form-control " data-type="date" data-format="DD-MM-YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-is_staff">
+				<div class="input-div">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{instruction.is_staff}}" name="is_staff" data-type="bool" {{itemIsChecked instruction.is_staff true}}>
+							Borrower Is Staff
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-early_drawdown">
+				<div class="input-div">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{instruction.early_drawdown}}" name="early_drawdown" data-type="bool" {{itemIsChecked instruction.early_drawdown true}}>
+							Early Drawdown
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount_kes">
+				<label for="amount_kes">
+					Amount (KES)
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount_kes" value="{{instruction.amount_kes}}" class="form-control " data-type="integer" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount_usd">
+				<label for="amount_usd">
+					Amount (USD)
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount_usd" value="{{instruction.amount_usd}}" class="form-control " data-type="integer" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount_eur">
+				<label for="amount_eur">
+					Amount (EUR)
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount_eur" value="{{instruction.amount_eur}}" class="form-control " data-type="integer" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount_gbp">
+				<label for="amount_gbp">
+					Amount (GBP)
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount_gbp" value="{{instruction.amount_gbp}}" class="form-control " data-type="integer" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					Relationship Manager
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm" value="{{instruction.rm}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-undertaking_issued">
+				<label for="undertaking_issued">
+					Undertaking Issued?
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="undertaking_issued" data-type="array">
+						<option value="No" {{optionIsSelected instruction.undertaking_issued "No"}}>							No</option>
+						<option value="Yes" {{optionIsSelected instruction.undertaking_issued "Yes"}}>							Yes</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-undertaking_end_date">
+				<label for="undertaking_end_date">
+					Undertaking Deadline
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="undertaking_end_date" value="{{formatDate instruction.undertaking_end_date 'DD-MM-YYYY'}}" class="form-control " data-type="date" data-format="DD-MM-YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-has_delays">
+				<div class="input-div">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{instruction.has_delays}}" name="has_delays" data-type="bool" {{itemIsChecked instruction.has_delays true}}>
+							Has Delays
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-reasons_for_delays">
+				<label for="reasons_for_delays">
+					Reasons For Delays
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="reasons_for_delays">{{instruction.reasons_for_delays}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
