@@ -1,0 +1,189 @@
+<template name="QsInstructionsQsInstructionsClosedUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> QsInstructionsQsInstructionsClosedUpdateForm}}
+	</div>
+</template>
+
+<template name="QsInstructionsQsInstructionsClosedUpdateForm">
+	<div id="qs-instructions-qs-instructions-closed-update-form" class="">
+		<h2 id="component-title">
+			Edit QS Instructions Closed
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-date">
+				<label for="date">
+					Date
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date" value="{{formatDate qs_instructions_closed.date 'DD/MM/YYYY'}}" class="form-control " autofocus="autofocus" required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-reference">
+				<label for="reference">
+					Reference
+				</label>
+				<div class="input-div">
+					<input type="text" name="reference" value="{{qs_instructions_closed.reference}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-qs-id">
+				<label for="qsId">
+					QS
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="qsId" data-type="string" required="required">
+						{{#each qs_list}}
+						<option value="{{_id}}" {{optionIsSelected ../qs_instructions_closed.qsId _id}}>							{{name}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<input type="text" name="borrower" value="{{qs_instructions_closed.borrower}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-currency">
+				<label for="currency">
+					Currency
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="currency" data-type="string">
+						<option value="KES" {{optionIsSelected qs_instructions_closed.currency "KES"}}>							KES</option>
+						<option value="USD" {{optionIsSelected qs_instructions_closed.currency "USD"}}>							USD</option>
+						<option value="EUR" {{optionIsSelected qs_instructions_closed.currency "EUR"}}>							EUR</option>
+						<option value="GBP" {{optionIsSelected qs_instructions_closed.currency "GBP"}}>							GBP</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-amount">
+				<label for="amount">
+					Amount
+				</label>
+				<div class="input-div">
+					<input type="text" name="amount" value="{{qs_instructions_closed.amount}}" class="form-control " required="required" data-type="float">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-plot_details">
+				<label for="Plot_Details">
+					Plot Details
+				</label>
+				<div class="input-div">
+					<input type="text" name="Plot_Details" value="{{qs_instructions_closed.Plot_Details}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					RM
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm" value="{{qs_instructions_closed.rm}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-action_pending_with">
+				<label for="action_pending_with">
+					Action Pending With
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="action_pending_with" data-type="string" required="required">
+						<option value="QS" {{optionIsSelected qs_instructions_closed.action_pending_with "QS"}}>							QS</option>
+						<option value="Customer" {{optionIsSelected qs_instructions_closed.action_pending_with "Customer"}}>							Customer</option>
+						<option value="RM" {{optionIsSelected qs_instructions_closed.action_pending_with "RM"}}>							RM</option>
+						<option value="Credit Ops " {{optionIsSelected qs_instructions_closed.action_pending_with "Credit Ops "}}>							Credit Ops</option>
+						<option value="Closed" {{optionIsSelected qs_instructions_closed.action_pending_with "Closed"}}>							Closed</option>
+						<option value="Cancelled" {{optionIsSelected qs_instructions_closed.action_pending_with "Cancelled"}}>							Cancelled</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_closed" value="{{formatDate qs_instructions_closed.date_closed 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

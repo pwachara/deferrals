@@ -1,0 +1,279 @@
+<template name="InstructionsDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<h2 id="page_title" class="pull-left">
+					<a href="#" id="page-back-button" class="btn btn-default" title="back">
+						<span class="fa fa-chevron-left">
+						</span>
+					</a>
+					Instruction Details
+				</h2>
+			</div>
+		</div>
+		{{> InstructionsDetailsDetailsForm}}
+	</div>
+</template>
+
+<template name="InstructionsDetailsDetailsForm">
+	<div id="instructions-details-details-form" class="">
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-bank_ref">
+				<label for="bank_ref">
+					Bank Reference
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-bank_ref">
+						{{instruction.bank_ref}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date">
+				<label for="date">
+					Date of Instruction
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date">
+						{{formatDate instruction.date 'DD-MM-YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-lawyer-name">
+				<label for="lawyer.name">
+					Lawyer
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-lawyer-name">
+						{{instruction.lawyer.name}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-borrower">
+						{{instruction.borrower}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-banking_segment-name">
+				<label for="banking_segment.name">
+					Banking Segment
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-banking_segment-name">
+						{{instruction.banking_segment.name}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-collateral">
+				<label for="collateral">
+					Collateral Details
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-collateral">
+						{{instruction.collateral}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-currencies">
+				<label for="currencies">
+					Currencies Used
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-currencies">
+						{{instruction.currencies}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-transaction_type">
+				<label for="transaction_type">
+					Nature of Transaction
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-transaction_type">
+						{{instruction.transaction_type}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-amount">
+				<label for="amount">
+					Amount of Charge
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-amount">
+						{{instruction.amount}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-update">
+				<label for="update">
+					Latest Update
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-update">
+						{{instruction.update}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-update_date">
+				<label for="update_date">
+					Date of Update
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-update_date">
+						{{formatDate instruction.update_date 'DD-MM-YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-action_pending_with">
+				<label for="action_pending_with">
+					Action Pending With
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-action_pending_with">
+						{{instruction.action_pending_with}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date_completed">
+				<label for="date_completed">
+					Date Completed
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date_completed">
+						{{formatDate instruction.date_completed 'DD-MM-YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-is_staff">
+				<label for="is_staff">
+					Borrower Is Staff
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-is_staff">
+						{{booleanToYesNo instruction.is_staff}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-early_drawdown">
+				<label for="early_drawdown">
+					Early Drawdown
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-early_drawdown">
+						{{booleanToYesNo instruction.early_drawdown}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-amount_kes">
+				<label for="amount_kes">
+					Amount (KES)
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-amount_kes">
+						{{instruction.amount_kes}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-amount_usd">
+				<label for="amount_usd">
+					Amount (USD)
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-amount_usd">
+						{{instruction.amount_usd}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-amount_eur">
+				<label for="amount_eur">
+					Amount (EUR)
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-amount_eur">
+						{{instruction.amount_eur}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-amount_gbp">
+				<label for="amount_gbp">
+					Amount (GBP)
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-amount_gbp">
+						{{instruction.amount_gbp}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					Relationship Manager
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-rm">
+						{{instruction.rm}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-undertaking_issued">
+				<label for="undertaking_issued">
+					Undertaking Issued?
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-undertaking_issued">
+						{{instruction.undertaking_issued}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-undertaking_end_date">
+				<label for="undertaking_end_date">
+					Undertaking Deadline
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-undertaking_end_date">
+						{{formatDate instruction.undertaking_end_date 'DD-MM-YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-has_delays">
+				<label for="has_delays">
+					Has Delays
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-has_delays">
+						{{booleanToYesNo instruction.has_delays}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-reasons_for_delays">
+				<label for="reasons_for_delays">
+					Reasons For Delays
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-reasons_for_delays">
+						{{instruction.reasons_for_delays}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

@@ -1,0 +1,139 @@
+<template name="ComplaintsComplaintsPendingDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ComplaintsComplaintsPendingDetailsDetailsForm}}
+	</div>
+</template>
+
+<template name="ComplaintsComplaintsPendingDetailsDetailsForm">
+	<div id="complaints-complaints-pending-details-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Complaint Details
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-complaint_date">
+				<label for="complaint_date">
+					Date of Complaint
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-complaint_date">
+						{{formatDate complaint.complaint_date 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-unit">
+				<label for="unit">
+					Credit Ops Unit
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-unit">
+						{{complaint.unit}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-staff_name">
+				<label for="staff_name">
+					Name of Staff
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-staff_name">
+						{{complaint.staff_name}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-complainant">
+				<label for="complainant">
+					Name of Complainant
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-complainant">
+						{{complaint.complainant}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-is_staff">
+				<label for="is_staff">
+					Complainant is Staff
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-is_staff">
+						{{complaint.is_staff}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-complainant_contact">
+				<label for="complainant_contact">
+					Contact of Complainant
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-complainant_contact">
+						{{complaint.complainant_contact}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-complaint_description">
+				<label for="complaint_description">
+					Brief Description of Complaint
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-complaint_description">
+						{{complaint.complaint_description}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-how_resolved">
+				<label for="how_resolved">
+					Resolution/ Update
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-how_resolved">
+						{{complaint.how_resolved}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-status">
+						{{complaint.status}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date_closed">
+						{{formatDate complaint.date_closed 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

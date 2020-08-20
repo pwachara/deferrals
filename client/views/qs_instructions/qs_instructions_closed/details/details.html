@@ -1,0 +1,112 @@
+<template name="QsInstructionsQsInstructionsClosedDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> QsInstructionsQsInstructionsClosedDetailsForm}}
+	</div>
+</template>
+
+<template name="QsInstructionsQsInstructionsClosedDetailsForm">
+	<div id="qs-instructions-qs-instructions-closed-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			QS Instructions Closed Details
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-date">
+				<label for="date">
+					Date
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date">
+						{{formatDate qs_instructions_closed.date 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-qs-name">
+				<label for="qs.name">
+					QS
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-qs-name">
+						{{qs_instructions_closed.qs.name}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-borrower">
+						{{qs_instructions_closed.borrower}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-plot_details">
+				<label for="Plot_Details">
+					Plot Details
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-plot_details">
+						{{qs_instructions_closed.Plot_Details}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					RM
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-rm">
+						{{qs_instructions_closed.rm}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-action_pending_with">
+				<label for="action_pending_with">
+					Action Pending With
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-action_pending_with">
+						{{qs_instructions_closed.action_pending_with}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date_closed">
+						{{formatDate qs_instructions_closed.date_closed 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

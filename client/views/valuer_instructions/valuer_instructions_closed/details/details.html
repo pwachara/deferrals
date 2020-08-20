@@ -1,0 +1,212 @@
+<template name="ValuerInstructionsValuerInstructionsClosedDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ValuerInstructionsValuerInstructionsClosedDetailsForm}}
+	</div>
+</template>
+
+<template name="ValuerInstructionsValuerInstructionsClosedDetailsForm">
+	<div id="valuer-instructions-valuer-instructions-closed-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Valuer Instructions Closed Details
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-bank_ref">
+				<label for="bank_ref">
+					Bank Ref
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-bank_ref">
+						{{valuer_instructions_closed.bank_ref}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date">
+				<label for="date">
+					Date
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date">
+						{{formatDate valuer_instructions_closed.date 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-valuer-name">
+				<label for="valuer.name">
+					Valuer
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-valuer-name">
+						{{valuer_instructions_closed.valuer.name}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-borrower">
+						{{valuer_instructions_closed.borrower}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-banking_segment-name">
+				<label for="banking_segment.name">
+					Banking Segment
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-banking_segment-name">
+						{{valuer_instructions_closed.banking_segment.name}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-property">
+				<label for="property">
+					Property
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-property">
+						{{valuer_instructions_closed.property}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-update">
+				<label for="update">
+					Update
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-update">
+						{{valuer_instructions_closed.update}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-update_date">
+				<label for="update_date">
+					Date of Update
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-update_date">
+						{{formatDate valuer_instructions_closed.update_date 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-status">
+						{{valuer_instructions_closed.status}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-date_closed">
+						{{formatDate valuer_instructions_closed.date_closed 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-value">
+				<label for="value">
+					Value (KES)
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-value">
+						{{valuer_instructions_closed.value}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					Relationship Manager
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-rm">
+						{{valuer_instructions_closed.rm}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-has_delays">
+				<label for="has_delays">
+					Has Delays
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-has_delays">
+						{{booleanToYesNo valuer_instructions_closed.has_delays}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-reasons_for_delay">
+				<label for="reasons_for_delay">
+					Reasons For Delay
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-reasons_for_delay">
+						{{valuer_instructions_closed.reasons_for_delay}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-report_reviewed">
+				<label for="report_reviewed">
+					Report Reviewed
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-report_reviewed">
+						{{booleanToYesNo valuer_instructions_closed.report_reviewed}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-review_satisfactory">
+				<label for="review_satisfactory">
+					Review Satisfactory
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-review_satisfactory">
+						{{booleanToYesNo valuer_instructions_closed.review_satisfactory}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-comments">
+				<label for="comments">
+					Comments
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-comments">
+						{{valuer_instructions_closed.comments}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

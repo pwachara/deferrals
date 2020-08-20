@@ -1,0 +1,163 @@
+<template name="BrdsBrdsClosedEdit">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<h2 id="page_title" class="pull-left">
+					Edit Closed BRD
+				</h2>
+			</div>
+		</div>
+		{{> BrdsBrdsClosedEditEditForm}}
+	</div>
+</template>
+
+<template name="BrdsBrdsClosedEditEditForm">
+	<div id="brds-brds-closed-edit-edit-form" class="">
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-description">
+				<label for="description">
+					BRD Description
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="description">{{brd.description}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ict_contact">
+				<label for="ict_contact">
+					To (ICT Contact Person)
+				</label>
+				<div class="input-div">
+					<input type="text" name="ict_contact" value="{{brd.ict_contact}}" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-raised_by">
+				<label for="raised_by">
+					Raised By (Unit)
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="raised_by" data-type="string" required="required">
+						<option value="credit_admin" {{optionIsSelected brd.raised_by "credit_admin"}}>							Credit Administration</option>
+						<option value="credit_processing" {{optionIsSelected brd.raised_by "credit_processing"}}>							Credit Processing</option>
+						<option value="documentation" {{optionIsSelected brd.raised_by "documentation"}}>							Documentation</option>
+						<option value="securities" {{optionIsSelected brd.raised_by "securities"}}>							Securities</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_raised">
+				<label for="date_raised">
+					Date Raised
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_raised" value="{{formatDate brd.date_raised 'DD/MM/YYYY'}}" class="form-control " required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-expected_date_of_closure">
+				<label for="expected_date_of_closure">
+					Expected Date Of Closure
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="expected_date_of_closure" value="{{formatDate brd.expected_date_of_closure 'DD/MM/YYYY'}}" class="form-control " required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="status" data-type="string" required="required">
+						<option value="pending" {{optionIsSelected brd.status "pending"}}>							Pending</option>
+						<option value="closed" {{optionIsSelected brd.status "closed"}}>							Closed</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-remarks">
+				<label for="remarks">
+					Remarks
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="remarks">{{brd.remarks}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_closed" value="{{formatDate brd.date_closed 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

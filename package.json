@@ -1,0 +1,12 @@
+{
+  "name": "instructions-9",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.3",
+    "bcrypt": "^5.0.0",
+    "meteor-node-stubs": "^1.0.0"
+  }
+}

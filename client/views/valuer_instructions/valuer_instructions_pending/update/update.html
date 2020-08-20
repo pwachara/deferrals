@@ -1,0 +1,281 @@
+<template name="ValuerInstructionsValuerInstructionsPendingUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ValuerInstructionsValuerInstructionsPendingUpdateForm}}
+	</div>
+</template>
+
+<template name="ValuerInstructionsValuerInstructionsPendingUpdateForm">
+	<div id="valuer-instructions-valuer-instructions-pending-update-form" class="">
+		<h2 id="component-title">
+			Edit Valuer Instructions Pending
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-bank_ref">
+				<label for="bank_ref">
+					Bank Ref
+				</label>
+				<div class="input-div">
+					<input type="text" name="bank_ref" value="{{valuer_instructions_pending.bank_ref}}" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date">
+				<label for="date">
+					Date
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date" value="{{formatDate valuer_instructions_pending.date 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-valuer-id">
+				<label for="valuerId">
+					Valuer
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="valuerId" data-type="string" required="required">
+						{{#each valuers}}
+						<option value="{{_id}}" {{optionIsSelected ../valuer_instructions_pending.valuerId _id}}>							{{name}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-borrower">
+				<label for="borrower">
+					Borrower
+				</label>
+				<div class="input-div">
+					<input type="text" name="borrower" value="{{valuer_instructions_pending.borrower}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-banking_segment-id">
+				<label for="banking_segmentId">
+					Banking Segment
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="banking_segmentId" data-type="string" required="required">
+						{{#each banking_segment_list}}
+						<option value="{{_id}}" {{optionIsSelected ../valuer_instructions_pending.banking_segmentId _id}}>							{{name}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-property">
+				<label for="property">
+					Property
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="property">{{valuer_instructions_pending.property}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-update">
+				<label for="update">
+					Update
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="update">{{valuer_instructions_pending.update}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-update_date">
+				<label for="update_date">
+					Date of Update
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="update_date" value="{{formatDate valuer_instructions_pending.update_date 'DD/MM/YYYY'}}" class="form-control " required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-status">
+				<label for="status">
+					Status
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="status" data-type="array" required="required">
+						<option value="Pending" {{optionIsSelected valuer_instructions_pending.status "Pending"}}>							Pending</option>
+						<option value="Closed" {{optionIsSelected valuer_instructions_pending.status "Closed"}}>							Closed</option>
+						<option value="Cancelled" {{optionIsSelected valuer_instructions_pending.status "Cancelled"}}>							Cancelled</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-date_closed">
+				<label for="date_closed">
+					Date Closed
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="date_closed" value="{{formatDate valuer_instructions_pending.date_closed 'DD/MM/YYYY'}}" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-value">
+				<label for="value">
+					Value (KES)
+				</label>
+				<div class="input-div">
+					<input type="text" name="value" value="{{valuer_instructions_pending.value}}" class="form-control " data-type="integer" data-min="0">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-rm">
+				<label for="rm">
+					Relationship Manager
+				</label>
+				<div class="input-div">
+					<input type="text" name="rm" value="{{valuer_instructions_pending.rm}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-has_delays">
+				<div class="input-div">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{valuer_instructions_pending.has_delays}}" name="has_delays" data-type="bool" {{itemIsChecked valuer_instructions_pending.has_delays true}}>
+							Has Delays
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-reasons_for_delay">
+				<label for="reasons_for_delay">
+					Reasons For Delay
+				</label>
+				<div class="input-div">
+					<input type="text" name="reasons_for_delay" value="{{valuer_instructions_pending.reasons_for_delay}}" class="form-control " data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-report_reviewed">
+				<div class="input-div">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{valuer_instructions_pending.report_reviewed}}" name="report_reviewed" data-type="bool" {{itemIsChecked valuer_instructions_pending.report_reviewed true}}>
+							Report Reviewed
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-review_satisfactory">
+				<div class="input-div">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="{{valuer_instructions_pending.review_satisfactory}}" name="review_satisfactory" data-type="bool" {{itemIsChecked valuer_instructions_pending.review_satisfactory true}}>
+							Review Satisfactory
+						</label>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-comments">
+				<label for="comments">
+					Comments
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="comments">{{valuer_instructions_pending.comments}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
