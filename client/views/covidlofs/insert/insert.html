@@ -84,7 +84,7 @@
 					LOF Received?
 				</label>
 				<div class="input-div">
-					<input type="text" name="lof_received" value="no" class="form-control " required="required" data-type="string">
+					<input type="text" name="lof_received" value="NO" class="form-control " required="required" data-type="string">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
@@ -96,7 +96,13 @@
 					Date Received
 				</label>
 				<div class="input-div">
-					<input type="text" name="date_received" value="" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+					<div class="input-group date">
+						<input type="text" name="date_received" value="" class="form-control " data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
