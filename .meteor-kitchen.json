@@ -2,7 +2,7 @@
 	"output_files": [
 		{
 			"path": "client/views/router.js",
-			"checksum": "5b397918fa3f0d727fd65de4b97f573dff2a9b96"
+			"checksum": "5b11df86c58bda630524c90fa1f3fad8f924db39"
 		},
 		{
 			"path": "server/controllers/router.js",
