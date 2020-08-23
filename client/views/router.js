@@ -140,9 +140,14 @@ Router.privateRoutes = [
 	"banking_segments.update",
 	"banking_segments.details",
 	"covidlofs",
-	"covidlofs.insert",
-	"covidlofs.update",
-	"covidlofs.details"
+	"covidlofs.pending_lofs",
+	"covidlofs.pending_lofs.insert",
+	"covidlofs.pending_lofs.update",
+	"covidlofs.pending_lofs.details",
+	"covidlofs.received_lofs",
+	"covidlofs.received_lofs.insert",
+	"covidlofs.received_lofs.update",
+	"covidlofs.received_lofs.details"
 ];
 
 Router.freeRoutes = [
@@ -402,7 +407,12 @@ Router.map(function () {
 	this.route("/banking_segments/update/:bankingSegmentId", {name: "banking_segments.update", title: "", controller: "BankingSegmentsUpdateController"});
 	this.route("/banking_segments/details/:bankingSegmentId", {name: "banking_segments.details", title: "", controller: "BankingSegmentsDetailsController"});
 	this.route("/covidlofs", {name: "covidlofs", title: "", controller: "CovidlofsController"});
-	this.route("/covidlofs/insert", {name: "covidlofs.insert", title: "", controller: "CovidlofsInsertController"});
-	this.route("/covidlofs/update/:covidlofId", {name: "covidlofs.update", title: "", controller: "CovidlofsUpdateController"});
-	this.route("/covidlofs/details/:covidlofId", {name: "covidlofs.details", title: "", controller: "CovidlofsDetailsController"});
+	this.route("/covidlofs/pending_lofs", {name: "covidlofs.pending_lofs", title: "", controller: "CovidlofsPendingLofsController"});
+	this.route("/covidlofs/pending_lofs/insert", {name: "covidlofs.pending_lofs.insert", title: "", controller: "CovidlofsPendingLofsInsertController"});
+	this.route("/covidlofs/pending_lofs/update/:pendingLofId", {name: "covidlofs.pending_lofs.update", title: "", controller: "CovidlofsPendingLofsUpdateController"});
+	this.route("/covidlofs/pending_lofs/details/:pendingLofId", {name: "covidlofs.pending_lofs.details", title: "", controller: "CovidlofsPendingLofsDetailsController"});
+	this.route("/covidlofs/received_lofs", {name: "covidlofs.received_lofs", title: "", controller: "CovidlofsReceivedLofsController"});
+	this.route("/covidlofs/received_lofs/insert", {name: "covidlofs.received_lofs.insert", title: "", controller: "CovidlofsReceivedLofsInsertController"});
+	this.route("/covidlofs/received_lofs/update/:receivedLofId", {name: "covidlofs.received_lofs.update", title: "", controller: "CovidlofsReceivedLofsUpdateController"});
+	this.route("/covidlofs/received_lofs/details/:receivedLofId", {name: "covidlofs.received_lofs.details", title: "", controller: "CovidlofsReceivedLofsDetailsController"});
 });
