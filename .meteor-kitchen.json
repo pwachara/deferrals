@@ -2,7 +2,7 @@
 	"output_files": [
 		{
 			"path": "client/views/router.js",
-			"checksum": "5b11df86c58bda630524c90fa1f3fad8f924db39"
+			"checksum": "cc8af1a20e18a323e7893b6c8e160967dd340de6"
 		},
 		{
 			"path": "server/controllers/router.js",
@@ -1670,27 +1670,15 @@
 		},
 		{
 			"path": "client/views/covidlofs/received_lofs/received_lofs.html",
-			"checksum": "3c0b40c1628ad4cc97cf49aae17e6e06e6dc0dbb"
+			"checksum": "0624e46a8f54b01072237b532719d77039ff19d6"
 		},
 		{
 			"path": "client/views/covidlofs/received_lofs/received_lofs.js",
-			"checksum": "bf1356530cd3f0ec142cdf974683663b10063599"
+			"checksum": "bb2f46585f55dc7b7c07d926da11935036ac5d6e"
 		},
 		{
 			"path": "client/views/covidlofs/received_lofs/received_lofs_controller.js",
 			"checksum": "e16942a137673168c42ce97ab8eff2f39a6a2b43"
-		},
-		{
-			"path": "client/views/covidlofs/received_lofs/insert/insert.html",
-			"checksum": "fb3a913b6c8cfaca73d335c2efcbc1c53255093e"
-		},
-		{
-			"path": "client/views/covidlofs/received_lofs/insert/insert.js",
-			"checksum": "ea242a8fd89659a18773066bf390a6bfd89ab754"
-		},
-		{
-			"path": "client/views/covidlofs/received_lofs/insert/insert_controller.js",
-			"checksum": "1a3ead64180ab7512cc11bd4c711763940514a95"
 		},
 		{
 			"path": "client/views/covidlofs/received_lofs/update/update.html",
@@ -2264,7 +2252,6 @@
 		"client/views/covidlofs/pending_lofs/update/",
 		"client/views/covidlofs/received_lofs/",
 		"client/views/covidlofs/received_lofs/details/",
-		"client/views/covidlofs/received_lofs/insert/",
 		"client/views/covidlofs/received_lofs/update/",
 		"client/views/deferrals/",
 		"client/views/deferrals/closed_deferrals/",

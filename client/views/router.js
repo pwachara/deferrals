@@ -145,7 +145,6 @@ Router.privateRoutes = [
 	"covidlofs.pending_lofs.update",
 	"covidlofs.pending_lofs.details",
 	"covidlofs.received_lofs",
-	"covidlofs.received_lofs.insert",
 	"covidlofs.received_lofs.update",
 	"covidlofs.received_lofs.details"
 ];
@@ -243,7 +242,6 @@ Router.roleMap = [
 	{ route: "covidlofs.pending_lofs.update",	roles: ["admin","manager","crad_user","crad_manager"] },
 	{ route: "covidlofs.pending_lofs.details",	roles: ["admin","manager","crad_user","crad_manager"] },
 	{ route: "covidlofs.received_lofs",	roles: ["admin","manager","crad_user","crad_manager"] },
-	{ route: "covidlofs.received_lofs.insert",	roles: ["admin","manager","crad_user","crad_manager"] },
 	{ route: "covidlofs.received_lofs.update",	roles: ["admin","manager","crad_user","crad_manager"] },
 	{ route: "covidlofs.received_lofs.details",	roles: ["admin","manager","crad_user","crad_manager"] }
 ];
@@ -420,7 +418,6 @@ Router.map(function () {
 	this.route("/covidlofs/pending_lofs/update/:pendingLofId", {name: "covidlofs.pending_lofs.update", title: "", controller: "CovidlofsPendingLofsUpdateController"});
 	this.route("/covidlofs/pending_lofs/details/:pendingLofId", {name: "covidlofs.pending_lofs.details", title: "", controller: "CovidlofsPendingLofsDetailsController"});
 	this.route("/covidlofs/received_lofs", {name: "covidlofs.received_lofs", title: "", controller: "CovidlofsReceivedLofsController"});
-	this.route("/covidlofs/received_lofs/insert", {name: "covidlofs.received_lofs.insert", title: "", controller: "CovidlofsReceivedLofsInsertController"});
 	this.route("/covidlofs/received_lofs/update/:receivedLofId", {name: "covidlofs.received_lofs.update", title: "", controller: "CovidlofsReceivedLofsUpdateController"});
 	this.route("/covidlofs/received_lofs/details/:receivedLofId", {name: "covidlofs.received_lofs.details", title: "", controller: "CovidlofsReceivedLofsDetailsController"});
 });

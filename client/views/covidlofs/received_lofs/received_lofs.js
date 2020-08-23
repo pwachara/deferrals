@@ -115,7 +115,7 @@ Template.CovidlofsReceivedLofsView.events({
 
 	"click #dataview-insert-button": function(e, t) {
 		e.preventDefault();
-		Router.go("covidlofs.received_lofs.insert", mergeObjects(Router.currentRouteParams(), {}));
+		/**/
 	},
 
 	"click #dataview-export-default": function(e, t) {
