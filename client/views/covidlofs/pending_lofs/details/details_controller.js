@@ -1,9 +1,10 @@
-this.CovidlofsController = RouteController.extend({
+this.CovidlofsPendingLofsDetailsController = RouteController.extend({
 	template: "Covidlofs",
 	
 
 	yieldTemplates: {
-		/*YIELD_TEMPLATES*/
+		'CovidlofsPendingLofsDetails': { to: 'CovidlofsSubcontent'}
+		
 	},
 
 	onBeforeAction: function() {
@@ -11,7 +12,7 @@ this.CovidlofsController = RouteController.extend({
 	},
 
 	action: function() {
-		this.redirect('covidlofs.pending_lofs', this.params || {}, { replaceState: true });
+		if(this.isReady()) { this.render(); } else { this.render("Covidlofs"); this.render("loading", { to: "CovidlofsSubcontent" });}
 		/*ACTION_FUNCTION*/
 	},
 
@@ -21,6 +22,7 @@ this.CovidlofsController = RouteController.extend({
 		
 
 		var subs = [
+			Meteor.subscribe("pending_lof", this.params.pendingLofId)
 		];
 		var ready = true;
 		_.each(subs, function(sub) {
@@ -34,7 +36,8 @@ this.CovidlofsController = RouteController.extend({
 		
 
 		var data = {
-			params: this.params || {}
+			params: this.params || {},
+			pending_lof: Covidlofs.findOne({_id:this.params.pendingLofId}, {})
 		};
 		
 

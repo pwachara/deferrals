@@ -2,7 +2,7 @@
 	"output_files": [
 		{
 			"path": "client/views/router.js",
-			"checksum": "ea229263adfc624d8aca846436dfc6d4c6734e8b"
+			"checksum": "5b397918fa3f0d727fd65de4b97f573dff2a9b96"
 		},
 		{
 			"path": "server/controllers/router.js",
@@ -1610,51 +1610,111 @@
 		},
 		{
 			"path": "client/views/covidlofs/covidlofs.html",
-			"checksum": "a419f865e1ef03a243cbf3ae0805a087539cb974"
+			"checksum": "d690d3b80e8c60090711acde3fb43b2d278e1b62"
 		},
 		{
 			"path": "client/views/covidlofs/covidlofs.js",
-			"checksum": "b6756427aaf4a1201b4a9baa96cdb0b253ec8e2e"
+			"checksum": "fcdc453e5559073cfe8e6ea7e2d7acbbf0e16e59"
 		},
 		{
 			"path": "client/views/covidlofs/covidlofs_controller.js",
-			"checksum": "c378c9ca1d1d0f8e5206befdc4da679197fbcbcf"
+			"checksum": "1d9c6b1865de95fd09ade33976b9c52cc69e3837"
 		},
 		{
-			"path": "client/views/covidlofs/insert/insert.html",
-			"checksum": "416db55e4275dc2d74e03ca64c3730c08c66020a"
+			"path": "client/views/covidlofs/pending_lofs/pending_lofs.html",
+			"checksum": "477683d2bfae95bbd08c201ba771eb45d252e2bb"
 		},
 		{
-			"path": "client/views/covidlofs/insert/insert.js",
-			"checksum": "a918c7528dfa8fb3d8426f2644b867839997787a"
+			"path": "client/views/covidlofs/pending_lofs/pending_lofs.js",
+			"checksum": "ccb91c66d612c12562cd5fddeaf26f6274aeee98"
 		},
 		{
-			"path": "client/views/covidlofs/insert/insert_controller.js",
-			"checksum": "d56537c9ce25ebb284c63eb047a26f8156c8237d"
+			"path": "client/views/covidlofs/pending_lofs/pending_lofs_controller.js",
+			"checksum": "32fd0dd8d301f98972dde8c9169713d0563abccf"
 		},
 		{
-			"path": "client/views/covidlofs/update/update.html",
-			"checksum": "0178d0c9da045b96f16122e99ff97a08cd71f61e"
+			"path": "client/views/covidlofs/pending_lofs/insert/insert.html",
+			"checksum": "06a5044ecc4bd997be8d5bbc4a2db96ed4d434b6"
 		},
 		{
-			"path": "client/views/covidlofs/update/update.js",
-			"checksum": "2e452df47d0b3021cf8e9c9cc440264468c44a48"
+			"path": "client/views/covidlofs/pending_lofs/insert/insert.js",
+			"checksum": "e44839ef2563f49bce73472b58b207e802247ab8"
 		},
 		{
-			"path": "client/views/covidlofs/update/update_controller.js",
-			"checksum": "73eab08bcd308f7c5ad18e1be71108855bc71678"
+			"path": "client/views/covidlofs/pending_lofs/insert/insert_controller.js",
+			"checksum": "89bacca5a5e20203771ee9ab829ebe4422d3289a"
 		},
 		{
-			"path": "client/views/covidlofs/details/details.html",
-			"checksum": "7da03bbce63634c81185249567d12ae3fe1ba414"
+			"path": "client/views/covidlofs/pending_lofs/update/update.html",
+			"checksum": "5aba5decb5cc9b899c2095f06dff8d994a8b8f97"
 		},
 		{
-			"path": "client/views/covidlofs/details/details.js",
-			"checksum": "57de95f1d2b68995ca7d41543c96ab0704c26481"
+			"path": "client/views/covidlofs/pending_lofs/update/update.js",
+			"checksum": "a8ad013d5f891e04dce1ca5824763e021215802b"
 		},
 		{
-			"path": "client/views/covidlofs/details/details_controller.js",
-			"checksum": "906f0ce8453503a9b8144df126a66fef361d3ee1"
+			"path": "client/views/covidlofs/pending_lofs/update/update_controller.js",
+			"checksum": "4bca8b492df8f8e707e6d1d828089373b1e43cb5"
+		},
+		{
+			"path": "client/views/covidlofs/pending_lofs/details/details.html",
+			"checksum": "7a242416fe014f887ce965d7f9f5886f289d93b4"
+		},
+		{
+			"path": "client/views/covidlofs/pending_lofs/details/details.js",
+			"checksum": "dd77c9252f450222e64c09c00499e06c2531ee5a"
+		},
+		{
+			"path": "client/views/covidlofs/pending_lofs/details/details_controller.js",
+			"checksum": "f9e870ff9fe593fda9e5a47ba9098bcb4ddc4f54"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/received_lofs.html",
+			"checksum": "3c0b40c1628ad4cc97cf49aae17e6e06e6dc0dbb"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/received_lofs.js",
+			"checksum": "bf1356530cd3f0ec142cdf974683663b10063599"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/received_lofs_controller.js",
+			"checksum": "e16942a137673168c42ce97ab8eff2f39a6a2b43"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/insert/insert.html",
+			"checksum": "947a13f775718e6bfa80e0c020fe94dcd851418e"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/insert/insert.js",
+			"checksum": "ea242a8fd89659a18773066bf390a6bfd89ab754"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/insert/insert_controller.js",
+			"checksum": "1a3ead64180ab7512cc11bd4c711763940514a95"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/update/update.html",
+			"checksum": "30aeeebf1df06c1f035d392755544d01d50f2d66"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/update/update.js",
+			"checksum": "8806168b140e43a52128896482484376cb98bde3"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/update/update_controller.js",
+			"checksum": "92f90a569da5dbd65a6a73486cabaacbc9f0e187"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/details/details.html",
+			"checksum": "5cc498f4881504e41d2a93d3b96d54a70c4a9298"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/details/details.js",
+			"checksum": "254bcc5e170f3d341dee4bb8efc6944b61dee38f"
+		},
+		{
+			"path": "client/views/covidlofs/received_lofs/details/details_controller.js",
+			"checksum": "c0453b40834d0db136826dcd5d73acab1005f421"
 		},
 		{
 			"path": "both/collections/lawyers.js",
@@ -1926,7 +1986,7 @@
 		},
 		{
 			"path": "server/publish/covidlofs.js",
-			"checksum": "56eaa86a6e22e5e76069e8586a62307294c629aa"
+			"checksum": "8c8be938ae9ae5fe6baed3c9657854f0273203a9"
 		},
 		{
 			"path": "both/joins/joins.js",
@@ -2198,9 +2258,14 @@
 		"client/views/complaints/complaints_pending/edit/",
 		"client/views/complaints/complaints_pending/insert/",
 		"client/views/covidlofs/",
-		"client/views/covidlofs/details/",
-		"client/views/covidlofs/insert/",
-		"client/views/covidlofs/update/",
+		"client/views/covidlofs/pending_lofs/",
+		"client/views/covidlofs/pending_lofs/details/",
+		"client/views/covidlofs/pending_lofs/insert/",
+		"client/views/covidlofs/pending_lofs/update/",
+		"client/views/covidlofs/received_lofs/",
+		"client/views/covidlofs/received_lofs/details/",
+		"client/views/covidlofs/received_lofs/insert/",
+		"client/views/covidlofs/received_lofs/update/",
 		"client/views/deferrals/",
 		"client/views/deferrals/closed_deferrals/",
 		"client/views/deferrals/closed_deferrals/details/",
