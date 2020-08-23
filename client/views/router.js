@@ -237,7 +237,15 @@ Router.roleMap = [
 	{ route: "sow.sow_pending.details",	roles: ["admin","manager","crad_manager"] },
 	{ route: "sow.sow_closed",	roles: ["admin","manager","crad_manager"] },
 	{ route: "sow.sow_closed.update",	roles: ["admin","manager","crad_manager"] },
-	{ route: "sow.sow_closed.details",	roles: ["admin","manager","crad_manager"] }
+	{ route: "sow.sow_closed.details",	roles: ["admin","manager","crad_manager"] },
+	{ route: "covidlofs.pending_lofs",	roles: ["admin","manager","crad_user","crad_manager"] },
+	{ route: "covidlofs.pending_lofs.insert",	roles: ["admin","manager","crad_user","crad_manager"] },
+	{ route: "covidlofs.pending_lofs.update",	roles: ["admin","manager","crad_user","crad_manager"] },
+	{ route: "covidlofs.pending_lofs.details",	roles: ["admin","manager","crad_user","crad_manager"] },
+	{ route: "covidlofs.received_lofs",	roles: ["admin","manager","crad_user","crad_manager"] },
+	{ route: "covidlofs.received_lofs.insert",	roles: ["admin","manager","crad_user","crad_manager"] },
+	{ route: "covidlofs.received_lofs.update",	roles: ["admin","manager","crad_user","crad_manager"] },
+	{ route: "covidlofs.received_lofs.details",	roles: ["admin","manager","crad_user","crad_manager"] }
 ];
 
 Router.defaultFreeRoute = "";
