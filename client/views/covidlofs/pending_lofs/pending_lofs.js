@@ -26,12 +26,12 @@ Template.CovidlofsPendingLofs.helpers({
 var CovidlofsPendingLofsViewExport = function(fileType) {
 	var extraParams = {
 		searchText: Session.get("PendingLofListPagedSearchString") || "",
-		searchFields: Session.get("PendingLofListPagedSearchFields") || ["borrower", "rm", "rm_email", "lof_received", "banking_segment.name"],
+		searchFields: Session.get("PendingLofListPagedSearchFields") || ["borrower", "rm", "rm_email", "lof_received", "banking_segment"],
 		sortBy: Session.get("PendingLofListPagedSortBy") || "",
 		sortAscending: Session.get("PendingLofListPagedSortAscending") || true
 	};
 
-	var exportFields = ["date", "borrower", "rm", "rm_email", "lof_received", "date_received", "banking_segment.name"];
+	var exportFields = ["date", "borrower", "rm", "rm_email", "lof_received", "date_received", "banking_segment"];
 
 	
 
