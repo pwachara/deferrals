@@ -25,5 +25,5 @@ Qs.join(Insurers, "insurerId", "insurer", []);
 QsInstructions.join(Qs, "qsId", "qs", []);
 
 // Covidlofs
-Covidlofs.join(BankingSegment, "banking_segmentId", "banking_segment", []);
+Covidlofs.join(BankingSegment, "banking_segmentId", "banking_segment.name", []);
 
