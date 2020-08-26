@@ -1978,7 +1978,7 @@
 		},
 		{
 			"path": "both/joins/joins.js",
-			"checksum": "7f108925092c29f5ac2c93be965ab2170d583947"
+			"checksum": "a53d5099cd4255972cc57eeea9197d702d3a9230"
 		},
 		{
 			"path": "server/methods/update_qs_instruction_history.js",
