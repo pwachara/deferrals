@@ -113,10 +113,7 @@
 				<th class="th-sortable" data-sort="date_received">
 					Date LOF Received
 				</th>
-				<th>
-					Banking Segment
-				</th>
-				<th class="th-sortable" data-sort="banking_segment.name">
+				<th class="th-sortable" data-sort="banking_segment">
 					Banking Segment
 				</th>
 				<th>
@@ -148,10 +145,7 @@
 			{{formatDate date_received 'DD/MM/YYYY'}}
 		</td>
 		<td>
-			{{banking_segmentId}}
-		</td>
-		<td>
-			{{banking_segment.name}}
+			{{banking_segment}}
 		</td>
 		<td class="td-icon">
 			<span id="edit-button" class="fa fa-pencil {{editButtonClass}}" title="Edit">
