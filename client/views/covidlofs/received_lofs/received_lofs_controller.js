@@ -19,7 +19,7 @@ this.CovidlofsReceivedLofsController = RouteController.extend({
 	isReady: function() {
 		this.receivedLofListPagedExtraParams = {
 			searchText: Session.get("ReceivedLofListPagedSearchString") || "",
-			searchFields: Session.get("ReceivedLofListPagedSearchFields") || ["borrower", "rm", "rm_email", "lof_received", "banking_segment"],
+			searchFields: Session.get("ReceivedLofListPagedSearchFields") || ["borrower", "rm", "rm_email", "lof_received", "banking_segment", "lof_due_date"],
 			sortBy: Session.get("ReceivedLofListPagedSortBy") || "",
 			sortAscending: Session.get("ReceivedLofListPagedSortAscending"),
 			pageNo: Session.get("ReceivedLofListPagedPageNo") || 0,

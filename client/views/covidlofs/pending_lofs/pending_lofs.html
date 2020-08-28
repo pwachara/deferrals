@@ -123,6 +123,9 @@
 				<th class="th-sortable" data-sort="banking_segment">
 					Banking Segment
 				</th>
+				<th class="th-sortable" data-sort="lof_due_date">
+					LOF Due Date
+				</th>
 				<th>
 					&nbsp;
 				</th>
@@ -156,6 +159,9 @@
 		</td>
 		<td>
 			{{banking_segment}}
+		</td>
+		<td>
+			{{formatDate lof_due_date ''}}
 		</td>
 		<td class="td-icon">
 			<span id="edit-button" class="fa fa-pencil {{editButtonClass}}" title="Edit">
