@@ -20,7 +20,10 @@ Covidlofs.before.insert(function(userId, doc) {
 
 	
 	if(!doc.createdBy) doc.createdBy = userId;
-doc.lof_due_date = new Date();
+var days_14 = new Date();
+days_14.setDate(days_14.getDate() + 14);
+
+doc.lof_due_date = days_14;
 });
 
 Covidlofs.before.update(function(userId, doc, fieldNames, modifier, options) {
