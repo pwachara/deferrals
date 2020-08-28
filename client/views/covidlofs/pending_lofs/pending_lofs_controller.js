@@ -19,7 +19,7 @@ this.CovidlofsPendingLofsController = RouteController.extend({
 	isReady: function() {
 		this.pendingLofListPagedExtraParams = {
 			searchText: Session.get("PendingLofListPagedSearchString") || "",
-			searchFields: Session.get("PendingLofListPagedSearchFields") || ["borrower", "rm", "rm_email", "lof_received", "banking_segment"],
+			searchFields: Session.get("PendingLofListPagedSearchFields") || ["borrower", "rm", "rm_email", "lof_received", "banking_segment", "lof_due_date"],
 			sortBy: Session.get("PendingLofListPagedSortBy") || "",
 			sortAscending: Session.get("PendingLofListPagedSortAscending"),
 			pageNo: Session.get("PendingLofListPagedPageNo") || 0,
