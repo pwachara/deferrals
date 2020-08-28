@@ -20,6 +20,7 @@ Covidlofs.before.insert(function(userId, doc) {
 
 	
 	if(!doc.createdBy) doc.createdBy = userId;
+doc.lof_due_date = new Date();
 });
 
 Covidlofs.before.update(function(userId, doc, fieldNames, modifier, options) {
