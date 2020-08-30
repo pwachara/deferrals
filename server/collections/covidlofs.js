@@ -20,11 +20,9 @@ Covidlofs.before.insert(function(userId, doc) {
 
 	
 	if(!doc.createdBy) doc.createdBy = userId;
-if(!doc.date){
-	doc.date = new Date();
-}
+var current_date = new Date();
 
-var date_in_2weeks = doc.date.setDate(doc.date.getDate() + 14);
+var date_in_2weeks = current_date.setDate(current_date.getDate() + 14);
 
 doc.lof_due_date = date_in_2weeks;
 });
