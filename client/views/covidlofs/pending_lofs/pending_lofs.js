@@ -31,7 +31,7 @@ var CovidlofsPendingLofsViewExport = function(fileType) {
 		sortAscending: Session.get("PendingLofListPagedSortAscending") || true
 	};
 
-	var exportFields = ["date", "borrower", "rm", "rm_email", "lof_received", "date_received", "banking_segment", "lof_due_date"];
+	var exportFields = ["date", "borrower", "rm", "rm_email", "escalate_to", "lof_received", "date_received", "banking_segment", "lof_due_date"];
 
 	
 
