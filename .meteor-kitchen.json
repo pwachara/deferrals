@@ -1970,7 +1970,7 @@
 		},
 		{
 			"path": "server/collections/covidlofs.js",
-			"checksum": "76ca92733c62bffbb132a87953ac676b02dbaa1e"
+			"checksum": "446dfdad173bcf9f2d8fb35dc3cf45c7a72b1c5e"
 		},
 		{
 			"path": "server/publish/covidlofs.js",
