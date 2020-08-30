@@ -24,7 +24,9 @@ if(!doc.date){
 	doc.date = new Date();
 }
 
-doc.lof_due_date = doc.date.setDate(doc.date.getDate() + 14);
+var date_in_2weeks = doc.date.setDate(doc.date.getDate() + 14);
+
+doc.lof_due_date = date_in_2weeks;
 });
 
 Covidlofs.before.update(function(userId, doc, fieldNames, modifier, options) {
@@ -33,11 +35,6 @@ Covidlofs.before.update(function(userId, doc, fieldNames, modifier, options) {
 	modifier.$set.modifiedBy = userId;
 
 	
-if(modifier.$set && modifier.$set.date){
-	
-	modifier.$set.lof_due_date = doc.date.setDate(doc.date.getDate() + 14);
-
-}
 });
 
 Covidlofs.before.upsert(function(userId, selector, modifier, options) {
@@ -58,11 +55,6 @@ Covidlofs.after.insert(function(userId, doc) {
 
 Covidlofs.after.update(function(userId, doc, fieldNames, modifier, options) {
 	
-if(modifier.$set && modifier.$set.date){
-	
-	modifier.$set.lof_due_date = doc.date.setDate(doc.date.getDate() + 14);
-
-}
 });
 
 Covidlofs.after.remove(function(userId, doc) {
