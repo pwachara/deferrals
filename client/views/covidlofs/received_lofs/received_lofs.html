@@ -110,7 +110,7 @@
 				<th class="th-sortable" data-sort="lof_received">
 					LOF Received?
 				</th>
-				<th class="th-sortable" data-sort="banking_segment">
+				<th class="th-sortable" data-sort="banking_segment.name">
 					Banking Segment
 				</th>
 				<th class="th-sortable" data-sort="lof_due_date">
@@ -142,7 +142,7 @@
 			{{lof_received}}
 		</td>
 		<td>
-			{{banking_segment}}
+			{{banking_segment.name}}
 		</td>
 		<td>
 			{{formatDate lof_due_date 'DD/MM/YYYY'}}
