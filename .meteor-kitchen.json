@@ -1634,7 +1634,7 @@
 		},
 		{
 			"path": "client/views/covidlofs/pending_lofs/insert/insert.html",
-			"checksum": "2a3fd2c38518039443f0c4c92feb41b3c29bc380"
+			"checksum": "2c5e6736e1e63372e8a2b7f5b5f41ce6b162e001"
 		},
 		{
 			"path": "client/views/covidlofs/pending_lofs/insert/insert.js",
